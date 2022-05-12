@@ -1,0 +1,39 @@
+@import "../../styles/index.module.scss";
+
+.StartProject {
+  padding: 7.5rem;
+}
+
+.Container {
+  background-color: #2b3756;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ButtonContainer {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.Image {
+  height: 420px;
+  width: 393px;
+}
+
+.Content {
+  color: white;
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    width: 430px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 590px;
+  }
+}

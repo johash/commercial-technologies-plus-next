@@ -1,0 +1,31 @@
+@import "../../../styles/index.module.scss";
+
+.Header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px rgba(213, 225, 236, 0.2);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+}
+
+.BtnMenu {
+  color: #a8d100;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  svg {
+    height: 28px;
+    width: 28px;
+  }
+}

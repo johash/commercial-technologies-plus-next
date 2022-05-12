@@ -1,0 +1,61 @@
+@import "../../styles/index.module.scss";
+
+.Awards {
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #2b3756;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.Content {
+  h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+  }
+}
+
+.AwardCards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.Card {
+  background-color: #364468;
+  color: white;
+  border-radius: 8px;
+  max-width: 350px;
+  padding: 1.5rem;
+  h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  p {
+    margin: 0;
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+}
+
+.ImageContainer {
+  height: 500px;
+  width: 400px;
+}

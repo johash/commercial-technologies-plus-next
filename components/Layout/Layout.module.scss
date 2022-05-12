@@ -1,0 +1,48 @@
+.Logo {
+  a {
+    display: inline-flex;
+    text-decoration: none;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+
+    span {
+      width: 10rem;
+      overflow: hidden;
+      height: 4rem;
+      position: relative;
+
+      div {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        margin: 0;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          box-sizing: border-box;
+          padding: 0;
+          border: none;
+          margin: auto;
+          display: block;
+          width: 0;
+          height: 0;
+          min-width: 100%;
+          max-width: 100%;
+          min-height: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

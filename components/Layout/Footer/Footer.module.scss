@@ -1,0 +1,38 @@
+.Footer {
+  background-color: #141414;
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+}
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavigationLinks {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.SocialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3.8rem;
+}
+
+.Rights {
+  text-align: center;
+  color: #898989;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 3.8rem;
+}

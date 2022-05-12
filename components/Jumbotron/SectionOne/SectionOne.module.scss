@@ -1,0 +1,65 @@
+@import "../../../styles/index.module.scss";
+
+.SectionOne {
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.TextContent {
+  width: 50%;
+  h1 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    color: #2b3756;
+    width: 75%;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    transition: 0.5s;
+  }
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    color: #6d6d6d;
+    transition: 0.5s;
+  }
+}
+
+.ImageContainer {
+  width: 50%;
+}
+
+.TextContentHide {
+  h1 {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-30px);
+  }
+  p {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 0.5s;
+  }
+}
+
+.ButtonContainer {
+  margin-top: 3.5rem;
+  transition: 0.5;
+}
+
+.SidePart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.ButtonContainerHide {
+  opacity: 0;
+  transition: 0.5;
+}

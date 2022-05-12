@@ -1,0 +1,33 @@
+.Btn {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.BtnPrimary {
+  color: white;
+  background-color: #00b3de;
+}
+
+.BtnSecondary {
+  color: white;
+  background-color: #a8d100;
+}
+
+.BtnPrimaryOutline {
+  color: #00b3de;
+  border: 1px solid #00b3de;
+  background-color: transparent;
+}
+
+.BtnTrans {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #596c9b;
+}

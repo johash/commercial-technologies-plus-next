@@ -1,0 +1,82 @@
+.OurFocus {
+  background-color: #2b3756;
+  padding: 7.5rem;
+  width: 100%;
+  text-align: center;
+  h2 {
+    color: white;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.FocusCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 28px;
+  grid-row-gap: 38px;
+}
+
+.DiamondContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.DiamondImage {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  background-color: #595d5f;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: breathinAnimation2 0.8s ease 0s infinite alternate forwards;
+}
+
+.Breather {
+  background-color: #3c4559;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: breathinAnimation 0.9s ease 0s infinite alternate forwards;
+}
+
+.OurFocusFooter {
+  color: white;
+  h4 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0.75rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+@keyframes breathinAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes breathinAnimation2 {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
