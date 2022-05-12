@@ -30,7 +30,7 @@ const Commercialize = () => {
             </div>
             <div>
               <p className={classes.Desc}>
-                Commercialize your idea in action. Let's get on the market
+                Commercialize your idea in action. Let&apos;s get on the market
                 quickly
               </p>
             </div>
@@ -50,7 +50,7 @@ const Commercialize = () => {
             </div>
             <div>
               <p className={classes.Desc}>
-                Commercialize your idea in action. Let's get on the market
+                Commercialize your idea in action. Let&apos;s get on the market
                 quickly
               </p>
             </div>
@@ -70,7 +70,7 @@ const Commercialize = () => {
             </div>
             <div>
               <p className={classes.Desc}>
-                Commercialize your idea in action. Let's get on the market
+                Commercialize your idea in action. Let&apos;s get on the market
                 quickly
               </p>
             </div>
