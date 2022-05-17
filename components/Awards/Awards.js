@@ -29,13 +29,12 @@ const Awards = () => {
             </button>
           </div>
         </div>
-        <div className={classes.Image}>
+        <div>
           <div className={classes.ImageContainer}>
             <Image
               src="/assets/awards.png"
-              layout="responsive"
-              height={440}
-              width={316}
+              layout="fill"
+              className={classes.Image}
             />
           </div>
         </div>

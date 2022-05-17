@@ -12,37 +12,29 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/kubernetes.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/aws.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/mysql.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/saas.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>
@@ -50,46 +42,36 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/spring.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/next.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/react.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/angular.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/java.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>
@@ -97,37 +79,29 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/node.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/ios.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/docker.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/grafana.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>
@@ -135,28 +109,22 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/google.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/android.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/hibernate.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>
@@ -167,37 +135,29 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/facebook1.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/messenger.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/twitter1.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/instagram1.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>
@@ -205,46 +165,36 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/stripe.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/goole1.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/google-maps.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/analytics.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/crm.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>
@@ -252,28 +202,22 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/shopify.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/slack.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/drive.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>
@@ -281,19 +225,15 @@ const TechStack = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/sheets.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/gmail.png"
-                  layout="fixed"
-                  objectFit="contain"
-                  height={88}
-                  width={88}
+                  layout="fill"
+                  className={classes.Icon}
                 />
               </div>
             </div>

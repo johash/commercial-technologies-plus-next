@@ -17,14 +17,22 @@
 }
 
 .MapContainer {
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   position: relative;
 }
 
 .ImageContainer {
-  height: 576px;
-  width: 1024px;
+  width: 100%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
 
 .Card1 {
@@ -65,11 +73,85 @@
 }
 
 .IconContainer {
-  width: 20px;
-  height: 30px;
+  width: 22px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
 
 .Desc {
   color: white;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .Commercialize {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .Heading {
+    font-size: 15px;
+  }
+  .Desc {
+    font-size: 13px;
+  }
+  .Card1 {
+    padding: 1rem;
+  }
+  .Card2 {
+    padding: 1rem;
+  }
+  .Card3 {
+    padding: 1rem;
+  }
+  .ImageContainer {
+    width: 700px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Commercialize {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .Container {
+    h2 {
+      font-size: 25px;
+    }
+  }
+  .ImageContainer {
+    display: none;
+  }
+  .MapContainer {
+    position: unset;
+  }
+  .Card1 {
+    position: inherit;
+    margin-bottom: 1rem;
+  }
+  .Card2 {
+    position: inherit;
+    margin-bottom: 1rem;
+  }
+  .Card3 {
+    position: inherit;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .Commercialize {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

@@ -22,3 +22,15 @@
   width: 80px;
   height: 80px;
 }
+
+@media (max-width: 425px) {
+  .FocusCard {
+    h5 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+}

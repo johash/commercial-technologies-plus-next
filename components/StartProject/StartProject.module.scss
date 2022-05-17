@@ -18,9 +18,17 @@
   gap: 1.25rem;
 }
 
-.Image {
-  height: 420px;
-  width: 393px;
+.ImageWrapper {
+  width: 100%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
 
 .Content {
@@ -35,5 +43,57 @@
     font-size: 16px;
     line-height: 30px;
     width: 590px;
+  }
+}
+
+@media (max-width: 768px) {
+  .StartProject {
+    padding: 3.75rem;
+  }
+  .Container {
+    position: relative;
+    padding: 3.75rem;
+  }
+  .Content {
+    z-index: 10;
+    p {
+      width: unset;
+    }
+  }
+  .ImageContainer {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    z-index: 0;
+  }
+  .ImageWrapper {
+    width: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .StartProject {
+    padding: 2rem;
+  }
+  .Content {
+    h2 {
+      width: unset;
+      font-size: 25px;
+    }
+  }
+  .ButtonContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .StartProject {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Container {
+    padding: 2rem;
   }
 }

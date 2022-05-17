@@ -17,7 +17,7 @@ const Footer = () => {
           </span>
         </a>
       </div>
-      <div className={classes.NavigationLinks}>
+      {/* <div className={classes.NavigationLinks}>
         <Link href="#">Company</Link>
         <Link href="#">Services</Link>
         <Link href="#">Case Studies</Link>
@@ -26,7 +26,7 @@ const Footer = () => {
         <Link href="#">Blog</Link>
         <Link href="#">FAQ</Link>
         <Link href="#">Contact Us</Link>
-      </div>
+      </div> */}
       <div className={classes.SocialMedia}>
         <Link href="#">
           <div className={classes.IconContainer}>

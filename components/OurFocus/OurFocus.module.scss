@@ -61,6 +61,50 @@
   }
 }
 
+@media (max-width: 768px) {
+  .OurFocus {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .FocusCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 38px;
+  }
+}
+
+@media (max-width: 425px) {
+  .OurFocus {
+    h2 {
+      font-size: 25px;
+    }
+  }
+  .FocusCardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 15px;
+  }
+  .OurFocusFooter {
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .OurFocus {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 @keyframes breathinAnimation {
   0% {
     transform: scale(0.8);

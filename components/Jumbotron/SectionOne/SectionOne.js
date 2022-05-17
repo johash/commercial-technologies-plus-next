@@ -75,10 +75,8 @@ const SectionOne = () => {
         <div>
           <Image
             src={sectionOneImage}
-            layout="fixed"
-            objectFit="contain"
-            width={600}
-            height={600}
+            layout="fill"
+            className={classes.Image}
           />
         </div>
       </div>

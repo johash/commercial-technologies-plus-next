@@ -56,6 +56,66 @@
 }
 
 .ImageContainer {
-  height: 500px;
-  width: 400px;
+  width: 100%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .Awards {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .Content {
+    width: 50%;
+  }
+  .AwardCards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ImageContainer {
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Awards {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .Container {
+    position: relative;
+    width: 100%;
+  }
+  .Content {
+    width: 100%;
+    z-index: 10;
+    h2 {
+      font-size: 25px;
+    }
+  }
+  .ImageContainer {
+    display: none;
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .Awards {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

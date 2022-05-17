@@ -14,7 +14,13 @@ const Header = (props) => {
         </a>
       </div>
       <div className={classes.Navigation}>
-        <button className={[classes.Btn, classes.BtnPrimaryOutline].join(" ")}>
+        <button
+          className={[
+            classes.Btn,
+            classes.BtnPrimaryOutline,
+            classes.ActionButton,
+          ].join(" ")}
+        >
           Hire Commercializers
         </button>
         <button className={classes.BtnMenu} onClick={props.toggleMenu}>

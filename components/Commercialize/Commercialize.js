@@ -10,9 +10,8 @@ const Commercialize = () => {
           <div className={classes.ImageContainer}>
             <Image
               src="/assets/map.png"
-              layout="responsive"
-              height={576}
-              width={1024}
+              layout="fill"
+              className={classes.Image}
             />
           </div>
           <div className={classes.Card1}>
@@ -20,13 +19,12 @@ const Commercialize = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/startups.png"
-                  layout="responsive"
-                  width={20}
-                  height={30}
+                  layout="fill"
+                  className={classes.Image}
                 />
               </div>
 
-              <span>Startups</span>
+              <span className={classes.Heading}>Startups</span>
             </div>
             <div>
               <p className={classes.Desc}>
@@ -40,13 +38,12 @@ const Commercialize = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/enterprise.png"
-                  layout="responsive"
-                  width={20}
-                  height={30}
+                  layout="fill"
+                  className={classes.Image}
                 />
               </div>
 
-              <span>Enterprise</span>
+              <span className={classes.Heading}>Enterprise</span>
             </div>
             <div>
               <p className={classes.Desc}>
@@ -60,13 +57,12 @@ const Commercialize = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/investors.png"
-                  layout="responsive"
-                  width={20}
-                  height={30}
+                  layout="fill"
+                  className={classes.Image}
                 />
               </div>
 
-              <span>Investors</span>
+              <span className={classes.Heading}>Investors</span>
             </div>
             <div>
               <p className={classes.Desc}>

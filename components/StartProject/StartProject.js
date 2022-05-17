@@ -25,12 +25,11 @@ const StartProject = () => {
           </div>
         </div>
         <div className={classes.ImageContainer}>
-          <div className={classes.Image}>
+          <div className={classes.ImageWrapper}>
             <Image
               src="/assets/robot.png"
-              layout="responsive"
-              height={420}
-              width={393}
+              layout="fill"
+              className={classes.Image}
             />
           </div>
         </div>
