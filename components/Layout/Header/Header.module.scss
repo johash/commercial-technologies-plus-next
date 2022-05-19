@@ -10,6 +10,10 @@
   padding-bottom: 1rem;
   padding-left: 7.5rem;
   padding-right: 7.5rem;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 999;
 }
 
 .Navigation {
