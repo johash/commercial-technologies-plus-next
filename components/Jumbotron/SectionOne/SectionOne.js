@@ -1,7 +1,9 @@
 import react from "react";
 import classes from "./SectionOne.module.scss";
 import Image from "next/image";
-import sectionOneImage from "../../../public/assets/003.png";
+import heroImageOne from "../../../public/assets/003.png";
+import heroImageTwo from "../../../public/assets/002.png";
+import heroImageThree from "../../../public/assets/001.png";
 
 const SectionOne = () => {
   const [textContentVisible, setTextContentVisibility] = react.useState(true);
@@ -16,6 +18,8 @@ const SectionOne = () => {
     "Skyrocket your ROI to an exponential growth",
     "We build commercial platforms",
   ];
+
+  const images = [heroImageOne, heroImageTwo, heroImageThree];
 
   const [index, setIndex] = react.useState(0);
 
@@ -71,15 +75,18 @@ const SectionOne = () => {
           </button>
         </div>
       </div>
-      <div className={classes.ImageContainer}>
-        <div>
-          <Image
-            src={sectionOneImage}
-            layout="fill"
-            className={classes.Image}
-          />
+      <div className={classes.ImageWrapper}>
+        <div className={classes.ImageContainer}>
+          <div>
+            <Image
+              src={images[index]}
+              layout="fill"
+              className={classes.Image}
+            />
+          </div>
         </div>
       </div>
+
       <div className={classes.SidePart}>
         <Image
           src="/assets/sidepart2.png"

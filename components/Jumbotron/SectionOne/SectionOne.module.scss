@@ -10,6 +10,7 @@
   justify-content: center;
   position: relative;
   min-height: calc(100vh - 100px);
+  // max-height: calc(100vh - 100px);
 }
 
 .TextContent {
@@ -34,6 +35,7 @@
 
 .ImageContainer {
   width: 40%;
+
   span {
     position: unset !important;
   }
@@ -42,6 +44,7 @@
     width: 100% !important;
     position: relative !important;
     height: unset !important;
+    transition: 0.5s;
   }
 }
 
@@ -54,6 +57,10 @@
   p {
     opacity: 0;
     transform: translateY(-30px);
+    transition: 0.5s;
+  }
+  .Image {
+    opacity: 0;
     transition: 0.5s;
   }
 }
@@ -74,41 +81,40 @@
   transition: 0.5;
 }
 
-@media (max-width: 768px) {
-  .SectionOne {
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
-    position: relative;
-    justify-content: flex-start;
-  }
-  .TextContent {
-    width: 90%;
-    z-index: 10;
-  }
-  .ImageContainer {
-    position: absolute;
-    width: 350px;
-    right: 5%;
-    z-index: 5;
-  }
-}
-
 @media (max-width: 425px) {
   .SectionOne {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
   }
   .TextContent {
     width: 100%;
+    height: 300px;
     h1 {
-      font-size: 35px;
-      line-height: 35px;
+      font-size: 34px;
+      line-height: 40px;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+    }
+    p {
+      text-align: center;
     }
   }
+  .ImageWrapper {
+    min-width: 350px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .ImageContainer {
-    width: 200px;
-    bottom: 15%;
+    width: 60%;
   }
 }
