@@ -98,7 +98,7 @@
     padding-right: 3.75rem;
   }
   .Heading {
-    font-size: 15px;
+    font-size: 14px;
   }
   .Desc {
     font-size: 13px;
@@ -121,16 +121,17 @@
   .Commercialize {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
   }
   .Container {
     h2 {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
   .ImageContainer {
-    display: none;
+    width: 340px;
+    margin-bottom: 1.5rem;
   }
   .MapContainer {
     position: unset;
@@ -138,20 +139,26 @@
   .Card1 {
     position: inherit;
     margin-bottom: 1rem;
+    max-width: fit-content;
   }
   .Card2 {
     position: inherit;
     margin-bottom: 1rem;
+    max-width: fit-content;
   }
   .Card3 {
     position: inherit;
     margin-bottom: 1rem;
+    max-width: fit-content;
   }
 }
 
 @media (max-width: 375px) {
   .Commercialize {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .ImageContainer {
+    width: 355px;
   }
 }

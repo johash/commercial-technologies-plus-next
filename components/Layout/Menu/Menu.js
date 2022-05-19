@@ -31,13 +31,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.GreenContainer}>
-              <Image
-                src="/assets/icons/company.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/company.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">
@@ -47,13 +47,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.BlueContainer}>
-              <Image
-                src="/assets/icons/services.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/services.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">
@@ -63,13 +63,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.GreenContainer}>
-              <Image
-                src="/assets/icons/case-studies.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/case-studies.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">
@@ -79,13 +79,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.BlueContainer}>
-              <Image
-                src="/assets/icons/careers.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/careers.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">
@@ -95,13 +95,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.GreenContainer}>
-              <Image
-                src="/assets/icons/awards.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/awards.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">
@@ -111,13 +111,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.BlueContainer}>
-              <Image
-                src="/assets/icons/blog.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/blog.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">
@@ -127,13 +127,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.GreenContainer}>
-              <Image
-                src="/assets/icons/faq.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/faq.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">
@@ -143,13 +143,13 @@ const Menu = (props) => {
         <div className={classes.MenuItem}>
           <div className={classes.IconContainer}>
             <div className={classes.BlueContainer}>
-              <Image
-                src="/assets/icons/contact-us.png"
-                layout="fixed"
-                objectFit="contain"
-                height={24}
-                width={24}
-              />
+              <div className={classes.ImageContainer}>
+                <Image
+                  src="/assets/icons/contact-us.png"
+                  layout="fill"
+                  className={classes.Icon}
+                />
+              </div>
             </div>
           </div>
           <Link href="#">

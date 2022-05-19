@@ -6,6 +6,7 @@
   h2 {
     color: white;
     margin-bottom: 2.5rem;
+    font-size: 36px;
   }
 }
 
@@ -15,6 +16,8 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 28px;
   grid-row-gap: 38px;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .DiamondContainer {
@@ -73,35 +76,42 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 28px;
     grid-row-gap: 38px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (max-width: 425px) {
   .OurFocus {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
     h2 {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
   .FocusCardContainer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 28px;
-    grid-row-gap: 15px;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
   }
   .OurFocusFooter {
     h4 {
       font-size: 18px;
     }
     p {
-      font-size: 15px;
+      font-size: 14px;
     }
+  }
+  .DiamondContainer {
+    margin-top: 2.5rem;
   }
 }
 
 @media (max-width: 375px) {
   .OurFocus {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 

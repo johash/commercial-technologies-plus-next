@@ -9,7 +9,7 @@ import TechStack from "../components/TechStack/TechStack";
 const HomePage = () => {
   return (
     <Layout>
-      <Jumbotron />
+      {/* <Jumbotron /> */}
       <OurFocus />
       <Commercialize />
       <Awards />

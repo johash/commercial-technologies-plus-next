@@ -15,22 +15,70 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
+    height: fit-content;
   }
 }
 
 .IconContainer {
   width: 80px;
-  height: 80px;
+  span {
+    position: unset !important;
+  }
+}
+
+.Icon {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.SeeMoreButton {
+  display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.ShowText {
+  height: fit-content;
+}
+
+.HideText {
+  height: 70px;
 }
 
 @media (max-width: 425px) {
   .FocusCard {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
     h5 {
-      font-size: 18px;
+      margin: 0;
+      font-size: 16px;
+      text-align: left;
     }
     p {
-      font-size: 13px;
-      line-height: 20px;
+      font-size: 12px;
+      text-align: left;
     }
+  }
+  .IconContainer {
+    width: 44px;
+  }
+  .Content {
+    width: 100%;
+    p {
+      height: 70px;
+      overflow: hidden;
+    }
+  }
+  .SeeMoreButton {
+    display: block;
   }
 }

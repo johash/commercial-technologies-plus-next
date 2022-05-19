@@ -4,9 +4,9 @@ import Image from "next/image";
 const Awards = () => {
   return (
     <div className={classes.Awards}>
+      <h2>Award winning SaaS platform innovators</h2>
       <div className={classes.Container}>
         <div className={classes.Content}>
-          <h2>Award winning SaaS platform innovators</h2>
           <div className={classes.AwardCards}>
             <div className={classes.Card}>
               <div>
@@ -23,13 +23,13 @@ const Awards = () => {
               <p>SLASSCOM National Ingenuity Awards 2021</p>
             </div>
           </div>
-          <div>
+          <div className={classes.ButtonContainer}>
             <button className={[classes.Btn, classes.BtnTrans].join(" ")}>
               View All Awards
             </button>
           </div>
         </div>
-        <div>
+        <div className={classes.ImageWrapper}>
           <div className={classes.ImageContainer}>
             <Image
               src="/assets/awards.png"

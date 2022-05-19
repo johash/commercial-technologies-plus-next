@@ -4,12 +4,26 @@
   padding: 7.5rem;
 }
 
-.Container {
+.MainContainer {
   background-color: #2b3756;
   padding: 5rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
+  h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    width: 430px;
+  }
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ButtonContainer {
@@ -33,11 +47,7 @@
 
 .Content {
   color: white;
-  h2 {
-    font-weight: 600;
-    font-size: 36px;
-    width: 430px;
-  }
+
   p {
     font-weight: 400;
     font-size: 16px;
@@ -50,21 +60,19 @@
   .StartProject {
     padding: 3.75rem;
   }
-  .Container {
+  .MainContainer {
     position: relative;
     padding: 3.75rem;
+  }
+  .Container {
+    flex-direction: column;
+    gap: 2rem;
   }
   .Content {
     z-index: 10;
     p {
       width: unset;
     }
-  }
-  .ImageContainer {
-    position: absolute;
-    right: 10%;
-    bottom: 5%;
-    z-index: 0;
   }
   .ImageWrapper {
     width: 250px;
@@ -74,15 +82,22 @@
 @media (max-width: 425px) {
   .StartProject {
     padding: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .Content {
+
+  .ButtonContainer {
+    width: 80%;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .MainContainer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     h2 {
       width: unset;
-      font-size: 25px;
+      font-size: 28px;
     }
-  }
-  .ButtonContainer {
-    flex-direction: column;
   }
 }
 
@@ -92,8 +107,5 @@
     padding-bottom: 2rem;
     padding-left: 0;
     padding-right: 0;
-  }
-  .Container {
-    padding: 2rem;
   }
 }

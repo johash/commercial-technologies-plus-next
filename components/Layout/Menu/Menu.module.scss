@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   position: fixed;
-  top: -100vh;
+  top: -150vh;
   z-index: 1000;
   background-color: white;
   display: flex;
@@ -42,15 +42,19 @@
 }
 
 .Body {
-  background-color: white;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.75rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .MenuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   &:hover {
@@ -72,6 +76,9 @@
 }
 
 .GreenContainer {
+  span {
+    position: unset !important;
+  }
   background-color: #a8d100;
   width: 100%;
   height: 100%;
@@ -89,6 +96,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ImageContainer {
+  width: 24px;
+  span {
+    position: unset !important;
+  }
+}
+
+.Icon {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
 }
 
 .Footer {
@@ -109,4 +130,64 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .Body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .IconContainer {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Menu {
+    justify-content: flex-start;
+  }
+  .Header {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+  .Body {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow-y: scroll;
+  }
+  .IconContainer {
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
+  .MenuItem {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    &:hover {
+      transform: scale(1);
+    }
+  }
+  .Footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .BrandContainer {
+    display: none;
+  }
 }
