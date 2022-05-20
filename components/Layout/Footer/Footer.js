@@ -18,14 +18,18 @@ const Footer = () => {
         </a>
       </div>
       <div className={classes.NavigationLinks}>
-        <Link href="#">Company</Link>
-        <Link href="#">Services</Link>
-        <Link href="#">Case Studies</Link>
-        <Link href="#">Awards</Link>
-        <Link href="#">Careers</Link>
-        <Link href="#">Blog</Link>
-        <Link href="#">FAQ</Link>
-        <Link href="#">Contact Us</Link>
+        <div className={classes.NavLeft}>
+          <Link href="#">Company</Link>
+          <Link href="#">Services</Link>
+          <Link href="#">Case Studies</Link>
+          <Link href="#">Awards</Link>
+        </div>
+        <div className={classes.NavRight}>
+          <Link href="#">Careers</Link>
+          <Link href="#">Blog</Link>
+          <Link href="#">FAQ</Link>
+          <Link href="#">Contact Us</Link>
+        </div>
       </div>
       <div className={classes.SocialMedia}>
         <Link href="#">
