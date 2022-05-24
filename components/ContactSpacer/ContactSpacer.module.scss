@@ -1,0 +1,10 @@
+.ContactSpacer {
+  width: 100%;
+  height: 960px;
+}
+
+@media (max-width: 425px) {
+  .ContactSpacer {
+    height: 1645px;
+  }
+}

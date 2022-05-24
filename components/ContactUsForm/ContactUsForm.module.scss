@@ -1,0 +1,229 @@
+@import "../../styles/index.module.scss";
+
+.ContactUsForm {
+  width: 55%;
+  box-shadow: 0px 2px 14px rgba(193, 193, 193, 0.25);
+  border-radius: 10px;
+  padding: 50px 40px;
+  margin-left: 120px;
+  margin-bottom: 150px;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  z-index: 20;
+}
+
+.Header {
+  h1 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.6;
+    margin: 0;
+  }
+}
+
+.FormTop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 45px;
+}
+
+.Input {
+  border: 1px solid #cedbe2;
+  border-radius: 6px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.MessageInputContainer {
+  textarea {
+    min-width: 100%;
+    border: 1px solid #cedbe2;
+    border-radius: 6px;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    resize: none;
+  }
+  margin-top: 25px;
+}
+
+.Commercializers {
+  margin-top: 60px;
+  span {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  label {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+}
+
+.CommercializersContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 30px;
+}
+
+.ToBuild {
+  margin-top: 60px;
+  span {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  label {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.ToBuildContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 30px;
+}
+
+.IconContainer {
+  width: 40px;
+  span {
+    position: unset !important;
+  }
+  .Icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.BuildType {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Budget {
+  margin-top: 60px;
+  span {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  label {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+}
+
+.BudgetContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 30px;
+}
+
+.ButtonContainer {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  span {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContactUsForm {
+    width: 90%;
+    margin-left: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .ContactUsForm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .FormTop {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .CommercializersContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .ToBuildContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .BudgetContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .ButtonContainer {
+    flex-direction: column;
+    button {
+      width: 100%;
+    }
+  }
+  .Header {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .Input {
+    font-size: 14px;
+  }
+  .Commercializers {
+    span {
+      font-size: 18px;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+  .ToBuild {
+    span {
+      font-size: 18px;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+  .Budget {
+    span {
+      font-size: 18px;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+}
