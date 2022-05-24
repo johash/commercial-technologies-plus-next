@@ -55,12 +55,12 @@
 @media (max-width: 768px) {
   .NavigationLinks {
     gap: 1.5rem;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 425px) {
   .NavigationLinks {
-    flex-direction: column;
     font-size: 13px;
   }
   .NavLeft {

@@ -64,11 +64,6 @@
     font-weight: 600;
     font-size: 20px;
   }
-  label {
-    font-weight: 500;
-    font-size: 16px;
-    margin-left: 15px;
-  }
 }
 
 .CommercializersContainer {
@@ -78,6 +73,10 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   margin-top: 30px;
+  span {
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
 
 .ToBuild {
@@ -118,6 +117,12 @@
   display: flex;
   align-items: center;
   gap: 15px;
+
+  .Label {
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10%;
+  }
 }
 
 .Budget {
@@ -125,11 +130,6 @@
   span {
     font-weight: 600;
     font-size: 20px;
-  }
-  label {
-    font-weight: 500;
-    font-size: 16px;
-    margin-left: 15px;
   }
 }
 
@@ -140,6 +140,10 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   margin-top: 30px;
+  span {
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
 
 .ButtonContainer {
@@ -150,6 +154,15 @@
   span {
     font-weight: 500;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .ContactUsForm {
+    width: 50%;
+  }
+  .Input {
+    padding: 14px;
   }
 }
 
@@ -176,6 +189,9 @@
   .CommercializersContainer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    span {
+      font-size: 14px !important;
+    }
   }
   .ToBuildContainer {
     grid-template-columns: repeat(1, 1fr);
@@ -184,6 +200,9 @@
   .BudgetContainer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    span {
+      font-size: 14px !important;
+    }
   }
   .ButtonContainer {
     flex-direction: column;
@@ -225,5 +244,16 @@
     label {
       font-size: 14px;
     }
+  }
+  .BuildType {
+    .Label {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .ContactUsForm {
+    padding: 50px 25px;
   }
 }

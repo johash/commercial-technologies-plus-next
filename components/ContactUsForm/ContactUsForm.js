@@ -21,34 +21,37 @@ const ContactUsForm = () => {
             placeholder="Email address"
             className={classes.Input}
           />
-          <input type="number" className={classes.Input} />
+          <input
+            type="number"
+            placeholder="2012345678"
+            className={classes.Input}
+          />
           <input type="text" placeholder="Company" className={classes.Input} />
         </div>
         <div className={classes.MessageInputContainer}>
-          <textarea name="message" id="message" cols="30" rows="7"></textarea>
+          <textarea
+            name="message"
+            id="message"
+            rows="7"
+            placeholder="Message"
+          ></textarea>
         </div>
         <div className={classes.Commercializers}>
           <span>Looking Commercializers for</span>
           <div className={classes.CommercializersContainer}>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="prototype">Prototype</label>
+              <Checkbox color="success">Prototype</Checkbox>
             </div>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="mvp">Minimum Viable Product (MVP)</label>
+              <Checkbox color="success">Minimum Viable Product (MVP)</Checkbox>
             </div>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="completePlatform">
-                Complete Product / Platform
-              </label>
+              <Checkbox color="success">Complete Product / Platform</Checkbox>
             </div>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="supportExistingProduct">
+              <Checkbox color="success">
                 Support with Existing Product{" "}
-              </label>
+              </Checkbox>
             </div>
           </div>
         </div>
@@ -56,37 +59,40 @@ const ContactUsForm = () => {
           <span>To Build</span>
           <div className={classes.ToBuildContainer}>
             <div className={classes.BuildType}>
-              <Checkbox defaultChecked="false" />
-              <div className={classes.IconContainer}>
-                <Image
-                  src={"/assets/icons/web-1.png"}
-                  layout="fill"
-                  className={classes.Icon}
-                />
-              </div>
-              <label htmlFor="web">Web</label>
+              <Checkbox color="success">
+                <div className={classes.IconContainer}>
+                  <Image
+                    src={"/assets/icons/web-1.png"}
+                    layout="fill"
+                    className={classes.Icon}
+                  />
+                </div>
+                <span className={classes.Label}>Web</span>
+              </Checkbox>
             </div>
             <div className={classes.BuildType}>
-              <Checkbox defaultChecked="false" />
-              <div className={classes.IconContainer}>
-                <Image
-                  src={"/assets/icons/apple-1.png"}
-                  layout="fill"
-                  className={classes.Icon}
-                />
-              </div>
-              <label htmlFor="ios">iOS</label>
+              <Checkbox color="success">
+                <div className={classes.IconContainer}>
+                  <Image
+                    src={"/assets/icons/apple-1.png"}
+                    layout="fill"
+                    className={classes.Icon}
+                  />
+                </div>
+                <span className={classes.Label}>iOS</span>
+              </Checkbox>
             </div>
             <div className={classes.BuildType}>
-              <Checkbox defaultChecked="false" />
-              <div className={classes.IconContainer}>
-                <Image
-                  src={"/assets/icons/android-1.png"}
-                  layout="fill"
-                  className={classes.Icon}
-                />
-              </div>
-              <label htmlFor="android">Android</label>
+              <Checkbox color="success">
+                <div className={classes.IconContainer}>
+                  <Image
+                    src={"/assets/icons/android-1.png"}
+                    layout="fill"
+                    className={classes.Icon}
+                  />
+                </div>
+                <span className={classes.Label}>Android</span>
+              </Checkbox>
             </div>
           </div>
         </div>
@@ -94,20 +100,16 @@ const ContactUsForm = () => {
           <span>Budget</span>
           <div className={classes.BudgetContainer}>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="10000">10,000 - 25,000 USD</label>
+              <Checkbox color="success">10,000 - 25,000 USD</Checkbox>
             </div>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="25000">25,000 - 50,000 USD</label>
+              <Checkbox color="success">25,000 - 50,000 USD</Checkbox>
             </div>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="50000">50,000 - 100,000 USD</label>
+              <Checkbox color="success">50,000 - 100,000 USD</Checkbox>
             </div>
             <div>
-              <Checkbox defaultChecked="false" />
-              <label htmlFor="100000">Over 100,000 USD</label>
+              <Checkbox color="success">Over 100,000 USD</Checkbox>
             </div>
           </div>
         </div>
