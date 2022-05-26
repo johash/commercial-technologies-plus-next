@@ -1,0 +1,24 @@
+.AwardsCarousel {
+  width: 100%;
+  height: 350px;
+}
+
+.Container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.ImageContainer {
+  min-width: 480px;
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+  .Image {
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+    object-fit: cover; // Optional
+  }
+}

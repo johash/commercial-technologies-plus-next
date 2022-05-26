@@ -1,0 +1,43 @@
+.HallOfFame {
+  margin-top: 140px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+.IconContainer {
+  width: 32px;
+  span {
+    position: unset !important;
+  }
+  .Icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.VideoContainer {
+  background-color: #3c4a6d;
+  width: 100%;
+  height: 50px;
+}

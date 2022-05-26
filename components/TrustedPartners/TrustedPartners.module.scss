@@ -1,0 +1,52 @@
+.TrustedPartners {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.Container {
+  background-color: white;
+  width: 100%;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  h5 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #7e7e7e;
+  }
+}
+
+.PartnerImages {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.Left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.ImageContainer {
+  width: 110px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

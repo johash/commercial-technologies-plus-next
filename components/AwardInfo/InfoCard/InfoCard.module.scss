@@ -1,0 +1,42 @@
+.Card {
+  background-color: #364468;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  height: 220px;
+  padding: 1.5rem;
+  h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  p {
+    margin: 0;
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+}
+
+.CardHeader {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 2rem;
+}
+
+.IconContainer {
+  width: 18px;
+  span {
+    position: unset !important;
+  }
+  .Icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
