@@ -32,3 +32,19 @@
     margin-top: 0.5rem;
   }
 }
+
+@media (max-width: 425px) {
+  .AwardInfo {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .Container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 12px;
+  }
+  .AwardInfo {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}

@@ -50,3 +50,25 @@
     height: unset !important;
   }
 }
+
+@media (max-width: 425px) {
+  .TrustedPartners {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+  .Container {
+    border-radius: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .PartnerImages {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .ImageContainer {
+    width: 50px;
+  }
+}

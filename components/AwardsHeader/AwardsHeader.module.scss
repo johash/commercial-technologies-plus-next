@@ -18,6 +18,7 @@
 
 .TextContent {
   color: white;
+  order: 1;
   h1 {
     font-weight: 600;
     font-size: 56px;
@@ -31,6 +32,10 @@
   }
 }
 
+.ImageContent {
+  order: 2;
+}
+
 .ImageContainer {
   width: 230px;
   span {
@@ -41,5 +46,38 @@
     width: 100% !important;
     position: relative !important;
     height: unset !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .AwardsHeader {
+    height: fit-content;
+  }
+  .Container {
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    text-align: center;
+  }
+  .TextContent {
+    order: 2;
+    margin-top: 50px;
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .ImageContent {
+    order: 1;
+  }
+  .ImageContainer {
+    width: 240px;
   }
 }
