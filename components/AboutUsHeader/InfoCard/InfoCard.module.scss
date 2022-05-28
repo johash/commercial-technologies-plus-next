@@ -1,0 +1,21 @@
+.Card {
+  border: 1px solid rgba(168, 209, 0, 0.4);
+  border-radius: 8px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #a8d100 !important;
+    margin: 0;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+  }
+}

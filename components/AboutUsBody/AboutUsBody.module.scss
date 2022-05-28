@@ -1,0 +1,86 @@
+.AboutUsBody {
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.Container {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.TextContent {
+  text-align: center;
+  h2 {
+    color: #2b3756;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    opacity: 0.56;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.AboutCardContainer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.Top {
+  display: flex;
+  gap: 50px;
+}
+
+.Bottom {
+  display: flex;
+  gap: 50px;
+}
+
+.ImageContainer1 {
+  width: 215px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.ImageContainer2 {
+  width: 175px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.BottomLeft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.BottomRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

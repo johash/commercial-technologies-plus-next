@@ -1,0 +1,24 @@
+.Card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.Blue {
+  background-color: #168eb4;
+}
+
+.Green {
+  background-color: #a8d100;
+}

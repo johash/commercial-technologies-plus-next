@@ -41,6 +41,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .Card {
+    height: 250px;
+  }
+}
+
 @media (max-width: 425px) {
   .Card {
     height: 200px;

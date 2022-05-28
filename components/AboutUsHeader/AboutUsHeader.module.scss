@@ -1,0 +1,57 @@
+.AboutUsHeader {
+  background-color: #2b3756;
+  width: 100%;
+  height: calc(100vh - 100px);
+  border-bottom: #00b3de solid 6px;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  position: relative;
+}
+
+.TextContent {
+  h1 {
+    width: 60%;
+    color: #a8d100;
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 86px;
+  }
+  p {
+    width: 70%;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.InfoCardContainer {
+  display: flex;
+  gap: 27px;
+  margin-top: 60px;
+}
+
+.ImageContent {
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+}
+
+.ImageContainer {
+  width: 690px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
