@@ -55,3 +55,87 @@
     height: unset !important;
   }
 }
+
+@media (max-width: 1536px) {
+  .ImageContainer {
+    width: 500px;
+  }
+  .TextContent {
+    h1 {
+      font-size: 56px;
+      line-height: 68px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutUsHeader {
+    height: auto;
+  }
+  .Container {
+    flex-direction: column;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 3.75rem;
+  }
+  .TextContent {
+    text-align: center;
+    h1 {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+  }
+  .Wrapper {
+    position: relative;
+    height: 640px;
+    width: 100%;
+  }
+  .ImageContent {
+    position: absolute;
+    margin-top: 30px;
+    bottom: -10%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+  .ImageContainer {
+    width: 450px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Container {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 3.75rem;
+  }
+  .InfoCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .TextContent {
+    h1 {
+      font-size: 36px !important;
+      line-height: 50px !important;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .Wrapper {
+    height: 490px;
+  }
+}

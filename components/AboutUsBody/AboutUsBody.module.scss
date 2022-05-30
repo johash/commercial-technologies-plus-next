@@ -2,6 +2,7 @@
   width: 100%;
   background-color: #f8f8f8;
   position: relative;
+  z-index: 1;
 }
 
 .Container {
@@ -77,10 +78,65 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .BottomRight {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1;
+}
+
+.AboutCardContainerMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .Top {
+    gap: 25px;
+  }
+  .Bottom {
+    gap: 25px;
+  }
+  .ImageContainer1 {
+    width: 130px;
+  }
+  .ImageContainer2 {
+    width: 140px;
+  }
+}
+
+@media (max-width: 425px) {
+  .AboutCardContainer {
+    display: none;
+  }
+  .Container {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  .AboutCardContainerMobile {
+    display: block;
+    margin-top: 60px;
+  }
+  .MobileTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+  }
+  .MobileBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }

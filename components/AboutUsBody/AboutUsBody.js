@@ -29,6 +29,21 @@ const AboutUsBody = () => {
             <AboutCard content="Strategic Growth" green />
           </div>
         </div>
+        <div className={classes.AboutCardContainerMobile}>
+          <div className={classes.MobileTop}>
+            <AboutCard content="Seamless User Journey" />
+            <AboutCard content="Brand is An Experience" green />
+            <AboutCard content="Maximize ROI" />
+            <AboutCard content="Quality Over Quantity" green />
+            <AboutCard content="Great Product Sell Themselves" />
+            <AboutCard content="Uniqueness" />
+            <AboutCard content="Retention" green />
+            <AboutCard content="Product Market Fit" />
+          </div>
+          <div className={classes.MobileBottom}>
+            <AboutCard content="Strategic Growth" green />
+          </div>
+        </div>
       </div>
       <div className={classes.BottomLeft}>
         <div className={classes.ImageContainer1}>

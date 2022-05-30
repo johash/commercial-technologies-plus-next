@@ -20,13 +20,15 @@ const AboutUsHeader = () => {
             <InfoCard heading="Employees" value="32" />
           </div>
         </div>
-        <div className={classes.ImageContent}>
-          <div className={classes.ImageContainer}>
-            <Image
-              src="/assets/team-image.png"
-              layout="fill"
-              className={classes.Image}
-            />
+        <div className={classes.Wrapper}>
+          <div className={classes.ImageContent}>
+            <div className={classes.ImageContainer}>
+              <Image
+                src="/assets/team-image.png"
+                layout="fill"
+                className={classes.Image}
+              />
+            </div>
           </div>
         </div>
       </div>

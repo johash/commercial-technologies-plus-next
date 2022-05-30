@@ -19,3 +19,14 @@
     color: white;
   }
 }
+
+@media (max-width: 425px) {
+  .Card {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
