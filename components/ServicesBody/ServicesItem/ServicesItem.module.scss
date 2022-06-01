@@ -1,0 +1,43 @@
+@import "../../../styles/index.module.scss";
+
+.ServicesItem {
+  margin-top: 220px;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.FlexReverse {
+  flex-direction: row-reverse;
+}
+
+.ImageContainer {
+  width: 380px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.Body {
+  width: 60%;
+  h2 {
+    color: #2b3756;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

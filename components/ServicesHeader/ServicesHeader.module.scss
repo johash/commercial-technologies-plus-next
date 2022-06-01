@@ -1,0 +1,90 @@
+@import "../../styles/index.module.scss";
+
+.ServicesHeader {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #168eb4;
+  border-bottom: #a8d100 solid 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.TextContent {
+  color: white;
+  h1 {
+    font-weight: 600;
+    font-size: 56px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    width: 800px;
+  }
+}
+
+.ActionButtonContainer {
+  margin-top: 40px;
+}
+
+.WrapperLeft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.WrapperRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.ImageContainerLeft {
+  width: 750px;
+  span {
+    position: unset !important;
+  }
+  .ImageLeft {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.ImageContainerRight {
+  width: 830px;
+  span {
+    position: unset !important;
+  }
+  .ImageRight {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 1536px) {
+  .ImageContainerLeft {
+    width: 620px;
+  }
+  .ImageContainerRight {
+    width: 680px;
+  }
+}
