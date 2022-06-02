@@ -17,6 +17,7 @@
   justify-content: center;
   text-align: center;
   padding-top: 150px;
+  position: relative;
 }
 
 .TextContent {
@@ -86,5 +87,53 @@
   }
   .ImageContainerRight {
     width: 680px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding-top: 80px;
+  }
+  .ImageContainerLeft {
+    width: 380px;
+  }
+  .ImageContainerRight {
+    width: 380px;
+  }
+  .TextContent {
+    text-align: center;
+    p {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .TextContent {
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
+  .WrapperLeft {
+    left: -235px;
+  }
+  .WrapperRight {
+    right: 0;
+    left: 250px;
+    overflow-x: hidden;
+  }
+  .ImageContainerRight {
+    overflow-x: hidden;
   }
 }

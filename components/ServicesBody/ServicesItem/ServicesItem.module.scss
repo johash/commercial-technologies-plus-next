@@ -41,3 +41,22 @@
     line-height: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  .ImageContainer {
+    width: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .ServicesItem {
+    margin-top: 110px;
+  }
+  .Container {
+    flex-direction: column;
+  }
+  .Body {
+    text-align: center;
+    width: 100%;
+  }
+}
