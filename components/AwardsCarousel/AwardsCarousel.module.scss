@@ -5,14 +5,16 @@
 
 .Container {
   height: 100%;
-  width: 100%;
+  width: min-content;
   display: flex;
   overflow: hidden;
+  position: relative;
+  animation: scroll 5s linear infinite alternate;
 }
 
 .ImageContainer {
-  min-width: 480px;
-  width: 33.33%;
+  width: 480px;
+  // width: 33.33%;
   height: 100%;
   position: relative;
   .Image {
@@ -20,5 +22,40 @@
     height: 100%;
     position: relative !important;
     object-fit: cover; // Optional
+  }
+}
+
+@media (max-width: 768px) {
+  .AwardsCarousel {
+    height: 270px;
+  }
+  .ImageContainer {
+    width: 350px;
+  }
+  .Container {
+    animation: scroll 15s linear infinite alternate;
+  }
+}
+
+@media (max-width: 425px) {
+  .AwardsCarousel {
+    height: 230px;
+  }
+  .ImageContainer {
+    width: 250px;
+  }
+  .Container {
+    animation: scroll 15s linear infinite alternate;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    // transform: translateX(0);
+    left: 0;
+  }
+  100% {
+    // transform: translateX(-33%);
+    left: calc(480px * -2);
   }
 }

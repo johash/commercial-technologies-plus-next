@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <div className={classes.Header}>
       <div className={classes.Logo}>
-        <a>
+        <a href="/">
           <span>
             <div>
               <img src="/assets/logo.png" alt="commercial-technologies-plus" />

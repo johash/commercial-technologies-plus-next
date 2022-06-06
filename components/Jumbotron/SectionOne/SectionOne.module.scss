@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 1;
   min-height: calc(100vh - 100px);
   // max-height: calc(100vh - 100px);
 }
@@ -74,6 +75,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .ButtonContainerHide {
