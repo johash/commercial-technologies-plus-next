@@ -1,5 +1,6 @@
 import classes from "./StartProject.module.scss";
 import Image from "next/image";
+import Router from "next/router";
 
 const StartProject = () => {
   return (
@@ -17,10 +18,18 @@ const StartProject = () => {
               our onboarding journey
             </p>
             <div className={classes.ButtonContainer}>
-              <button className={[classes.Btn, classes.BtnPrimary].join(" ")}>
+              <button
+                className={[classes.Btn, classes.BtnPrimary].join(" ")}
+                onClick={() =>
+                  Router.push("https://calendly.com/supunmayushan")
+                }
+              >
                 Schedule a Call
               </button>
-              <button className={[classes.Btn, classes.BtnSecondary].join(" ")}>
+              <button
+                className={[classes.Btn, classes.BtnSecondary].join(" ")}
+                onClick={() => Router.push("/contact-us")}
+              >
                 Leave a Message
               </button>
             </div>

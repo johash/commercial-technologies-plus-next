@@ -3,10 +3,15 @@ import classes from "./FocusCard.module.scss";
 import Image from "next/image";
 
 const FocusCard = (props) => {
-  const [isTextShown, setIsTextShown] = useState(false);
+  // const [isTextShown, setIsTextShown] = useState(false);
 
   const toggleTextVisiblity = () => {
-    setIsTextShown(!isTextShown);
+    // setIsTextShown(!isTextShown);
+    if (props.id === props.selectedCardId) {
+      props.setSelectedCardId(-1);
+    } else {
+      props.setSelectedCardId(props.id);
+    }
   };
 
   return (
@@ -22,7 +27,7 @@ const FocusCard = (props) => {
             className={classes.SeeMoreButton}
             onClick={toggleTextVisiblity}
           >
-            {isTextShown ? "See Less" : "See More"}
+            {props.selectedCardId === props.id ? "See Less" : "See More"}
           </button>
         </div>
       </div>

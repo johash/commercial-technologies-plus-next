@@ -19,16 +19,16 @@ const Footer = () => {
       </div>
       <div className={classes.NavigationLinks}>
         <div className={classes.NavLeft}>
-          <Link href="#">Company</Link>
-          <Link href="#">Services</Link>
-          <Link href="#">Case Studies</Link>
-          <Link href="#">Awards</Link>
+          <Link href="/about-us">Company</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/case-studies">Case Studies</Link>
+          <Link href="/awards">Awards</Link>
         </div>
         <div className={classes.NavRight}>
-          <Link href="#">Careers</Link>
-          <Link href="#">Blog</Link>
-          <Link href="#">FAQ</Link>
-          <Link href="#">Contact Us</Link>
+          <Link href="https://boards.rooster.jobs/9205">Careers</Link>
+          <Link href="https://medium.com/@commercialtp">Blog</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/contact-us">Contact Us</Link>
         </div>
       </div>
       <div className={classes.SocialMedia}>

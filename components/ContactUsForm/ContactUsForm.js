@@ -1,8 +1,11 @@
+import { useState } from "react";
 import classes from "./ContactUsForm.module.scss";
 import Image from "next/image";
 import { Checkbox } from "@nextui-org/react";
 
 const ContactUsForm = () => {
+  const [selectedBudget, setSelectedBudget] = useState(0);
+
   return (
     <div className={classes.ContactUsForm}>
       <div className={classes.Header}>
@@ -100,16 +103,40 @@ const ContactUsForm = () => {
           <span>Budget</span>
           <div className={classes.BudgetContainer}>
             <div>
-              <Checkbox color="success">10,000 - 25,000 USD</Checkbox>
+              <Checkbox
+                color="success"
+                onChange={() => setSelectedBudget(0)}
+                isSelected={selectedBudget === 0}
+              >
+                10,000 - 25,000 USD
+              </Checkbox>
             </div>
             <div>
-              <Checkbox color="success">25,000 - 50,000 USD</Checkbox>
+              <Checkbox
+                color="success"
+                onChange={() => setSelectedBudget(1)}
+                isSelected={selectedBudget === 1}
+              >
+                25,000 - 50,000 USD
+              </Checkbox>
             </div>
             <div>
-              <Checkbox color="success">50,000 - 100,000 USD</Checkbox>
+              <Checkbox
+                color="success"
+                onChange={() => setSelectedBudget(2)}
+                isSelected={selectedBudget === 2}
+              >
+                50,000 - 100,000 USD
+              </Checkbox>
             </div>
             <div>
-              <Checkbox color="success">Over 100,000 USD</Checkbox>
+              <Checkbox
+                color="success"
+                onChange={() => setSelectedBudget(3)}
+                isSelected={selectedBudget === 3}
+              >
+                Over 100,000 USD
+              </Checkbox>
             </div>
           </div>
         </div>

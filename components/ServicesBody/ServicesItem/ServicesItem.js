@@ -1,5 +1,6 @@
 import classes from "./ServicesItem.module.scss";
 import Image from "next/image";
+import Router from "next/router";
 
 const ServicesItem = (props) => {
   return (
@@ -24,6 +25,7 @@ const ServicesItem = (props) => {
           <h2>{props.heading}</h2>
           <p>{props.description}</p>
           <button
+            onClick={() => Router.push("/contact-us")}
             className={
               props.invert
                 ? [classes.Btn, classes.BtnSecondaryOutline].join(" ")

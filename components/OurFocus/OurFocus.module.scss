@@ -90,10 +90,8 @@
     }
   }
   .FocusCardContainer {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
+    display: flex;
+    flex-direction: column;
   }
   .OurFocusFooter {
     h4 {

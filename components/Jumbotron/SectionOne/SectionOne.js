@@ -82,6 +82,7 @@ const SectionOne = () => {
               src={images[index]}
               layout="fill"
               className={classes.Image}
+              priority={true}
             />
           </div>
         </div>
@@ -94,6 +95,7 @@ const SectionOne = () => {
           objectFit="contain"
           height={402}
           width={176}
+          priority={true}
         />
       </div>
     </div>

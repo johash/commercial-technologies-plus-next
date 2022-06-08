@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h5 {
     color: white;
     font-weight: 600;
@@ -48,10 +49,6 @@
 
 .ShowText {
   height: fit-content;
-}
-
-.HideText {
-  height: 70px;
 }
 
 @media (max-width: 425px) {

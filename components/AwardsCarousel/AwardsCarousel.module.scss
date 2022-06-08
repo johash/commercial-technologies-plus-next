@@ -1,13 +1,14 @@
 .AwardsCarousel {
   width: 100%;
   height: 350px;
+  overflow-x: hidden;
 }
 
 .Container {
   height: 100%;
   width: min-content;
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   animation: scroll 5s linear infinite alternate;
 }

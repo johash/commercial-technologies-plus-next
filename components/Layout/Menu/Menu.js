@@ -12,7 +12,7 @@ const Menu = (props) => {
     <div className={styleClasses.join(" ")}>
       <div className={classes.Header}>
         <div className={classes.Logo}>
-          <a>
+          <a href="/">
             <span>
               <div>
                 <img
@@ -68,7 +68,7 @@ const Menu = (props) => {
           </Link>
         </div>
         <div className={classes.MenuItem}>
-          <Link href="#">
+          <Link href="/case-studies">
             <div className={classes.IconContainer}>
               <div className={classes.GreenContainer}>
                 <div className={classes.ImageContainer}>
@@ -81,12 +81,12 @@ const Menu = (props) => {
               </div>
             </div>
           </Link>
-          <Link href="#">
+          <Link href="/case-studies">
             <span>Case Studies</span>
           </Link>
         </div>
         <div className={classes.MenuItem}>
-          <Link href="#">
+          <Link href="https://boards.rooster.jobs/9205">
             <div className={classes.IconContainer}>
               <div className={classes.BlueContainer}>
                 <div className={classes.ImageContainer}>
@@ -99,7 +99,7 @@ const Menu = (props) => {
               </div>
             </div>
           </Link>
-          <Link href="#">
+          <Link href="https://boards.rooster.jobs/9205">
             <span>Careers</span>
           </Link>
         </div>
@@ -122,7 +122,7 @@ const Menu = (props) => {
           </Link>
         </div>
         <div className={classes.MenuItem}>
-          <Link href="#">
+          <Link href="https://medium.com/@commercialtp">
             <div className={classes.IconContainer}>
               <div className={classes.BlueContainer}>
                 <div className={classes.ImageContainer}>
@@ -135,12 +135,12 @@ const Menu = (props) => {
               </div>
             </div>
           </Link>
-          <Link href="#">
+          <Link href="https://medium.com/@commercialtp">
             <span>Blog</span>
           </Link>
         </div>
         <div className={classes.MenuItem}>
-          <Link href="#">
+          <Link href="/faq">
             <div className={classes.IconContainer}>
               <div className={classes.GreenContainer}>
                 <div className={classes.ImageContainer}>
@@ -153,7 +153,7 @@ const Menu = (props) => {
               </div>
             </div>
           </Link>
-          <Link href="#">
+          <Link href="/faq">
             <span>FAQ</span>
           </Link>
         </div>
