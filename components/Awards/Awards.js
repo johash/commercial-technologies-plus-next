@@ -1,5 +1,6 @@
 import classes from "./Awards.module.scss";
 import Image from "next/image";
+import Router from "next/router";
 
 const Awards = () => {
   return (
@@ -24,7 +25,10 @@ const Awards = () => {
             </div>
           </div>
           <div className={classes.ButtonContainer}>
-            <button className={[classes.Btn, classes.BtnTrans].join(" ")}>
+            <button
+              className={[classes.Btn, classes.BtnTrans].join(" ")}
+              onClick={() => Router.push("/awards")}
+            >
               View All Awards
             </button>
           </div>

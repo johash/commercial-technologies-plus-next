@@ -16,7 +16,7 @@ const AwardsPage = () => {
         <AwardsCarousel />
         <AwardInfo />
         <TrustedPartners />
-        <HallOfFame />
+        {/* <HallOfFame /> */}
         <StartProject />
       </div>
     </Layout>
