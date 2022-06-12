@@ -45,6 +45,18 @@
   font-size: 16px;
 }
 
+.PhoneNumberInput {
+  border: 1px solid #cedbe2;
+  border-radius: 6px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+
+  * {
+    border: none;
+  }
+}
+
 .MessageInputContainer {
   textarea {
     min-width: 100%;

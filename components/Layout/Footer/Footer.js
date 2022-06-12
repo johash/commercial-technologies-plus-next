@@ -32,7 +32,11 @@ const Footer = () => {
         </div>
       </div>
       <div className={classes.SocialMedia}>
-        <Link href="#">
+        <a
+          href="https://www.facebook.com/commercialtp"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/facebook.png"
@@ -42,8 +46,12 @@ const Footer = () => {
               height={20}
             />
           </div>
-        </Link>
-        <Link href="#">
+        </a>
+        <a
+          href="https://twitter.com/CommercialTech?t=Ud1TfFB5wqM8AfsyhIpoCA&s=08"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/twitter.png"
@@ -53,8 +61,12 @@ const Footer = () => {
               height={20}
             />
           </div>
-        </Link>
-        <Link href="#">
+        </a>
+        <a
+          href="https://www.linkedin.com/company/commercialtp/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/instagram.png"
@@ -64,7 +76,7 @@ const Footer = () => {
               height={20}
             />
           </div>
-        </Link>
+        </a>
       </div>
       <div className={classes.Rights}>
         <span>All rights reserved 2022 • Commercial Technologies Plus</span>

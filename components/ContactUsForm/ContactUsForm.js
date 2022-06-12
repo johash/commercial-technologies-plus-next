@@ -1,10 +1,54 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import classes from "./ContactUsForm.module.scss";
 import Image from "next/image";
 import { Checkbox } from "@nextui-org/react";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+import emailjs from "@emailjs/browser";
 
 const ContactUsForm = () => {
   const [selectedBudget, setSelectedBudget] = useState(0);
+  const [phoneNumber, setPhoneNumber] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const form = useRef();
+
+  const onPhoneNumberInputChange = (value) => {
+    setPhoneNumber(value);
+  };
+
+  const onNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const onEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const onMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wkmpbgr",
+        "template_5l3aspt",
+        form.current,
+        "UyHo0Yqjz2M9nzs-2"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className={classes.ContactUsForm}>
@@ -12,22 +56,31 @@ const ContactUsForm = () => {
         <h1>Lets get Connected</h1>
         <p>Please fill out the below details to get in touch with us</p>
       </div>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className={classes.FormTop}>
           <input
             type="text"
+            name="name"
             placeholder="Your name"
             className={classes.Input}
+            value={name}
+            onChange={onNameChange}
           />
           <input
             type="email"
+            name="email"
             placeholder="Email address"
             className={classes.Input}
+            value={email}
+            onChange={onEmailChange}
           />
-          <input
-            type="number"
-            placeholder="2012345678"
-            className={classes.Input}
+          <PhoneInput
+            placeholder="Enter phone number"
+            value={phoneNumber}
+            onChange={onPhoneNumberInputChange}
+            defaultCountry="LK"
+            className={classes.PhoneNumberInput}
+            inputComponent={"input"}
           />
           <input type="text" placeholder="Company" className={classes.Input} />
         </div>
@@ -37,6 +90,8 @@ const ContactUsForm = () => {
             id="message"
             rows="7"
             placeholder="Message"
+            value={message}
+            onChange={onMessageChange}
           ></textarea>
         </div>
         <div className={classes.Commercializers}>
@@ -147,6 +202,7 @@ const ContactUsForm = () => {
           <span>or</span>
           <button
             className={[classes.Btn, classes.BtnSecondaryOutline].join(" ")}
+            type="submit"
           >
             Send us an email
           </button>
