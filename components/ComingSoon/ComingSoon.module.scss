@@ -12,7 +12,7 @@
 }
 
 .LottieContainer {
-  width: 550px;
+  height: 450px;
 }
 
 .TextContent {
@@ -30,9 +30,15 @@
   }
 }
 
+@media (max-width: 1536px) {
+  .LottieContainer {
+    height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   .LottieContainer {
-    width: 480px;
+    height: 400px;
   }
   .TextContent {
     margin-top: 20px;
@@ -41,7 +47,7 @@
 
 @media (max-width: 425px) {
   .LottieContainer {
-    width: 300px;
+    height: 360px;
   }
   .TextContent {
     h1 {

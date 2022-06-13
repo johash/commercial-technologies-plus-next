@@ -17,10 +17,10 @@ const ComingSoon = () => {
     <section className={classes.ComingSoon}>
       <div className={classes.Container}>
         <div className={classes.LottieContainer}>
-          <Lottie options={defaultOptions} height={480} />
+          <Lottie options={defaultOptions} width={360} height={360} />
         </div>
         <div className={classes.TextContent}>
-          <h1>Hey, We are upgrading this page</h1>
+          <h1>Sorry, We are upgrading this page</h1>
           <p>
             The page you are looking for is currently upgrading on. Page will be
             available soon.
