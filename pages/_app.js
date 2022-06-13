@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import React from "react";
-import Preloader from "../components/UI/PreLoader/Preloader";
+import Preloader from "./preloader/index";
 
 import { NextUIProvider } from "@nextui-org/react";
 

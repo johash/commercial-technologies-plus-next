@@ -1,6 +1,6 @@
-import classes from "./Preloader.module.scss";
+import classes from "./index.module.scss";
 import Lottie from "react-lottie";
-import PreloaderAnimation from "../../../public/assets/animation/preloader.json";
+import PreloaderAnimation from "../../public/assets/animation/preloader.json";
 
 const Preloader = () => {
   const defaultOptions = {
