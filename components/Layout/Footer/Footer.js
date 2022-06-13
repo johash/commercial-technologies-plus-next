@@ -21,13 +21,13 @@ const Footer = () => {
         <div className={classes.NavLeft}>
           <Link href="/about-us">Company</Link>
           <Link href="/services">Services</Link>
-          <Link href="/case-studies">Case Studies</Link>
+          <Link href="/coming-soon">Case Studies</Link>
           <Link href="/awards">Awards</Link>
         </div>
         <div className={classes.NavRight}>
           <Link href="https://boards.rooster.jobs/9205">Careers</Link>
           <Link href="https://medium.com/@commercialtp">Blog</Link>
-          <Link href="/faq">FAQ</Link>
+          <Link href="/coming-soon">FAQ</Link>
           <Link href="/contact-us">Contact Us</Link>
         </div>
       </div>
@@ -63,13 +63,28 @@ const Footer = () => {
           </div>
         </a>
         <a
-          href="https://www.linkedin.com/company/commercialtp/"
+          href="https://instagram.com/commercialtp_?igshid=YmMyMTA2M2Y="
           target="_blank"
           rel="noreferrer"
         >
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/instagram.png"
+              layout="fixed"
+              objectFit="contain"
+              width={20}
+              height={20}
+            />
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/commercialtp/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className={classes.IconContainer}>
+            <Image
+              src="/assets/icons/linkedin.png"
               layout="fixed"
               objectFit="contain"
               width={20}

@@ -78,9 +78,10 @@ const ContactUsForm = () => {
             placeholder="Enter phone number"
             value={phoneNumber}
             onChange={onPhoneNumberInputChange}
-            defaultCountry="LK"
+            defaultCountry="US"
             className={classes.PhoneNumberInput}
             inputComponent={"input"}
+            international
           />
           <input type="text" placeholder="Company" className={classes.Input} />
         </div>
@@ -163,7 +164,7 @@ const ContactUsForm = () => {
                 onChange={() => setSelectedBudget(0)}
                 isSelected={selectedBudget === 0}
               >
-                10,000 - 25,000 USD
+                {"< 10,000 USD"}
               </Checkbox>
             </div>
             <div>
@@ -172,7 +173,7 @@ const ContactUsForm = () => {
                 onChange={() => setSelectedBudget(1)}
                 isSelected={selectedBudget === 1}
               >
-                25,000 - 50,000 USD
+                10,000 - 25,000 USD
               </Checkbox>
             </div>
             <div>
@@ -181,7 +182,7 @@ const ContactUsForm = () => {
                 onChange={() => setSelectedBudget(2)}
                 isSelected={selectedBudget === 2}
               >
-                50,000 - 100,000 USD
+                25,000 - 50,000 USD
               </Checkbox>
             </div>
             <div>
@@ -189,6 +190,15 @@ const ContactUsForm = () => {
                 color="success"
                 onChange={() => setSelectedBudget(3)}
                 isSelected={selectedBudget === 3}
+              >
+                50,000 - 100,000 USD
+              </Checkbox>
+            </div>
+            <div>
+              <Checkbox
+                color="success"
+                onChange={() => setSelectedBudget(4)}
+                isSelected={selectedBudget === 4}
               >
                 Over 100,000 USD
               </Checkbox>

@@ -24,7 +24,7 @@ const ServicesBody = () => {
         invert
         imageSrc="/assets/services/4.png"
         heading="Productivity Services"
-        description="Tincidunt in massa quam sagittis tempus, sed nulla pellesque sodales. Fringilla egestas mollis malesuada tortor et sceleri. Donec lectus lacinia sed quis risus commodo. Viverra in sit lectus turpis et. Ultrices accumsan, consequat acinia sed quis sodales risus lorem."
+        description="Use the expertise and deep tech background of Commercial Technologies Plus to take the lead in adopting a new approach to enhance the overall productivity of your company. Reimagine, rethink, and redesign the way work is performed and realize your full potential with our third party services and commercial platform integrations."
       />
       <ServicesItem
         imageSrc="/assets/services/5.png"
@@ -35,7 +35,7 @@ const ServicesBody = () => {
         invert
         imageSrc="/assets/services/6.png"
         heading="Growth Strategies & Market Fit"
-        description="Tincidunt in massa quam sagittis tempus, sed nulla pellesque sodales. Fringilla egestas mollis malesuada tortor et sceleri. Donec lectus lacinia sed quis risus commodo. Viverra in sit lectus turpis et. Ultrices accumsan, consequat acinia sed quis sodales risus lorem."
+        description="Drive more revenue with data-driven and strategic approaches to thrive in this intensively challenging market. We help enterprises to derive the maximum value and to gain a competitive advantage in an ever-changing market by identifying user journey, market segments, specifications and many more optimal high-quality solutions."
       />
       <ServicesItem
         imageSrc="/assets/services/7.png"

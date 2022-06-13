@@ -68,7 +68,7 @@ const Menu = (props) => {
           </Link>
         </div>
         <div className={classes.MenuItem}>
-          <Link href="/case-studies">
+          <Link href="/coming-soon">
             <div className={classes.IconContainer}>
               <div className={classes.GreenContainer}>
                 <div className={classes.ImageContainer}>
@@ -81,7 +81,7 @@ const Menu = (props) => {
               </div>
             </div>
           </Link>
-          <Link href="/case-studies">
+          <Link href="/coming-soon">
             <span>Case Studies</span>
           </Link>
         </div>
@@ -140,7 +140,7 @@ const Menu = (props) => {
           </Link>
         </div>
         <div className={classes.MenuItem}>
-          <Link href="/faq">
+          <Link href="/coming-soon">
             <div className={classes.IconContainer}>
               <div className={classes.GreenContainer}>
                 <div className={classes.ImageContainer}>
@@ -153,7 +153,7 @@ const Menu = (props) => {
               </div>
             </div>
           </Link>
-          <Link href="/faq">
+          <Link href="/coming-soon">
             <span>FAQ</span>
           </Link>
         </div>

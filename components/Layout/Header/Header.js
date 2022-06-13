@@ -1,5 +1,6 @@
 import classes from "./Header.module.scss";
 import { MdMenu } from "react-icons/md";
+import Router from "next/router";
 
 const Header = (props) => {
   return (
@@ -20,6 +21,7 @@ const Header = (props) => {
             classes.BtnPrimaryOutline,
             classes.ActionButton,
           ].join(" ")}
+          onClick={() => Router.push("/contact-us")}
         >
           Hire Commercializers
         </button>

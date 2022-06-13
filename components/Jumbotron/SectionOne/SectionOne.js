@@ -1,6 +1,7 @@
 import react from "react";
 import classes from "./SectionOne.module.scss";
 import Image from "next/image";
+import Router from "next/router";
 import heroImageOne from "../../../public/assets/003.png";
 import heroImageTwo from "../../../public/assets/002.png";
 import heroImageThree from "../../../public/assets/001.png";
@@ -70,7 +71,10 @@ const SectionOne = () => {
             textContentVisible ? {} : classes.ButtonContainerHide,
           ].join(" ")}
         >
-          <button className={[classes.Btn, classes.BtnSecondary].join(" ")}>
+          <button
+            className={[classes.Btn, classes.BtnSecondary].join(" ")}
+            onClick={() => Router.push("/contact-us")}
+          >
             Hire Commercializers
           </button>
         </div>
