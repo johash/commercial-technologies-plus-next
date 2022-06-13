@@ -12,15 +12,9 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
-      {!loading ? (
-        <NextUIProvider>
-          <Component {...pageProps} />
-        </NextUIProvider>
-      ) : (
-        <Preloader />
-      )}
-    </>
+    <NextUIProvider>
+      <Component {...pageProps} />
+    </NextUIProvider>
   );
 }
 
