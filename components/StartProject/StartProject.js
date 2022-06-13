@@ -21,7 +21,7 @@ const StartProject = () => {
               <button
                 className={[classes.Btn, classes.BtnPrimary].join(" ")}
                 onClick={() =>
-                  Router.push("https://calendly.com/supunmayushan")
+                  Router.push("https://calendly.com/supunmayushan/30min")
                 }
               >
                 Schedule a Call
