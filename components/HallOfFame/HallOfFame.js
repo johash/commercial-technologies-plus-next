@@ -9,6 +9,7 @@ const HallOfFame = () => {
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/hollywood-star.png"
+              alt="hollywood star icon"
               layout="fill"
               className={classes.Icon}
             />
@@ -17,6 +18,7 @@ const HallOfFame = () => {
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/hollywood-star.png"
+              alt="hollywood star icon"
               layout="fill"
               className={classes.Icon}
             />

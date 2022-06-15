@@ -8,6 +8,7 @@ const InfoCard = (props) => {
         <div className={classes.IconContainer}>
           <Image
             src="/assets/icons/leaf-left.png"
+            alt="leaf left"
             layout="fill"
             className={classes.Icon}
           />
@@ -16,6 +17,7 @@ const InfoCard = (props) => {
         <div className={classes.IconContainer}>
           <Image
             src="/assets/icons/leaf-right.png"
+            alt="leaf right"
             layout="fill"
             className={classes.Icon}
           />

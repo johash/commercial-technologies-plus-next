@@ -122,6 +122,7 @@ const ContactUsForm = () => {
                 <div className={classes.IconContainer}>
                   <Image
                     src={"/assets/icons/web-1.png"}
+                    alt="web icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -134,6 +135,7 @@ const ContactUsForm = () => {
                 <div className={classes.IconContainer}>
                   <Image
                     src={"/assets/icons/apple-1.png"}
+                    alt="apple logo icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -146,6 +148,7 @@ const ContactUsForm = () => {
                 <div className={classes.IconContainer}>
                   <Image
                     src={"/assets/icons/android-1.png"}
+                    alt="android icon"
                     layout="fill"
                     className={classes.Icon}
                   />

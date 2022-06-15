@@ -37,6 +37,7 @@ const Awards = () => {
           <div className={classes.ImageContainer}>
             <Image
               src="/assets/awards.png"
+              alt="SLASSCOM National Ingenuity Awards 2021 image"
               layout="fill"
               className={classes.Image}
             />

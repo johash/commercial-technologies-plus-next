@@ -10,6 +10,7 @@ const ContactHeader = () => {
         <div className={classes.ImageContainer}>
           <Image
             src="/assets/abstract-wave.png"
+            alt="abstract wave right"
             layout="fill"
             className={classes.Image}
           />

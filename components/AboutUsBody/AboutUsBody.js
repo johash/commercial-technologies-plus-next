@@ -49,6 +49,7 @@ const AboutUsBody = () => {
         <div className={classes.ImageContainer1}>
           <Image
             src="/assets/bottom-left.png"
+            alt="left-gray-fraction"
             layout="fill"
             className={classes.Image}
           />
@@ -58,6 +59,7 @@ const AboutUsBody = () => {
         <div className={classes.ImageContainer2}>
           <Image
             src="/assets/bottom-right.png"
+            alt="right-gray-fraction"
             layout="fill"
             className={classes.Image}
           />

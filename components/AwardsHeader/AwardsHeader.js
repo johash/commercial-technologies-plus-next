@@ -16,6 +16,7 @@ const AwardsHeader = () => {
           <div className={classes.ImageContainer}>
             <Image
               src="/assets/six-awards.png"
+              alt="awards count"
               layout="fill"
               className={classes.Image}
             />

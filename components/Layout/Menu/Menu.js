@@ -37,6 +37,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/company.png"
+                    alt="company icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -56,6 +57,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/services.png"
+                    alt="services icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -74,6 +76,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/case-studies.png"
+                    alt="case studies icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -92,6 +95,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/careers.png"
+                    alt="careers icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -110,6 +114,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/awards.png"
+                    alt="awards icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -128,6 +133,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/blog.png"
+                    alt="blog icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -146,6 +152,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/faq.png"
+                    alt="faq icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -164,6 +171,7 @@ const Menu = (props) => {
                 <div className={classes.ImageContainer}>
                   <Image
                     src="/assets/icons/contact-us.png"
+                    alt="contact us icon"
                     layout="fill"
                     className={classes.Icon}
                   />
@@ -183,6 +191,7 @@ const Menu = (props) => {
             <div className={classes.BrandIconContainer}>
               <Image
                 src="/assets/brands/1.png"
+                alt="entrepreneurship studio sri lanka telecom"
                 layout="fill"
                 className={classes.BrandIcon}
               />
@@ -190,6 +199,7 @@ const Menu = (props) => {
             <div className={classes.BrandIconContainer}>
               <Image
                 src="/assets/brands/2.png"
+                alt="Information and Communication Technology Agency"
                 layout="fill"
                 className={classes.BrandIcon}
               />
@@ -197,6 +207,7 @@ const Menu = (props) => {
             <div className={classes.BrandIconContainer}>
               <Image
                 src="/assets/brands/3.png"
+                alt="ICTA Spiralation"
                 layout="fill"
                 className={classes.BrandIcon}
               />
@@ -204,6 +215,7 @@ const Menu = (props) => {
             <div className={classes.BrandIconContainer}>
               <Image
                 src="/assets/brands/4.png"
+                alt="Lankan Angel Network"
                 layout="fill"
                 className={classes.BrandIcon}
               />
@@ -213,6 +225,7 @@ const Menu = (props) => {
             <div className={classes.BrandIconContainer}>
               <Image
                 src="/assets/brands/5.png"
+                alt="SLASSCOM (Sri Lanka Association for Software and Services Companies)"
                 layout="fill"
                 className={classes.BrandIcon}
               />
@@ -227,6 +240,7 @@ const Menu = (props) => {
             <div className={classes.BrandIconContainer}>
               <Image
                 src="/assets/brands/7.png"
+                alt="NBQSA National ICT Awards"
                 layout="fill"
                 className={classes.BrandIcon}
               />

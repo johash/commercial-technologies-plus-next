@@ -25,6 +25,7 @@ const AboutUsHeader = () => {
             <div className={classes.ImageContainer}>
               <Image
                 src="/assets/team-image.png"
+                alt="company team image"
                 layout="fill"
                 className={classes.Image}
               />

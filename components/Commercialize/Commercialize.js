@@ -10,6 +10,7 @@ const Commercialize = () => {
           <div className={classes.ImageContainer}>
             <Image
               src="/assets/map.png"
+              alt="commercial technologies plus worldwide"
               layout="fill"
               className={classes.Image}
             />
@@ -19,6 +20,7 @@ const Commercialize = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/startups.png"
+                  alt="startup icon"
                   layout="fill"
                   className={classes.Image}
                 />
@@ -38,6 +40,7 @@ const Commercialize = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/enterprise.png"
+                  alt="enterprise icon"
                   layout="fill"
                   className={classes.Image}
                 />
@@ -57,6 +60,7 @@ const Commercialize = () => {
               <div className={classes.IconContainer}>
                 <Image
                   src="/assets/icons/investors.png"
+                  alt="investors icon"
                   layout="fill"
                   className={classes.Image}
                 />

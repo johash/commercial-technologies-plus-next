@@ -40,6 +40,7 @@ const Footer = () => {
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/facebook.png"
+              alt="facebook icon"
               layout="fixed"
               objectFit="contain"
               width={20}
@@ -55,6 +56,7 @@ const Footer = () => {
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/twitter.png"
+              alt="twitter icon"
               layout="fixed"
               objectFit="contain"
               width={20}
@@ -70,6 +72,7 @@ const Footer = () => {
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/instagram.png"
+              alt="instagram icon"
               layout="fixed"
               objectFit="contain"
               width={20}
@@ -85,6 +88,7 @@ const Footer = () => {
           <div className={classes.IconContainer}>
             <Image
               src="/assets/icons/linkedin.png"
+              alt="linkedin icon"
               layout="fixed"
               objectFit="contain"
               width={20}
