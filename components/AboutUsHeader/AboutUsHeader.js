@@ -15,9 +15,9 @@ const AboutUsHeader = () => {
           </p>
           <div className={classes.InfoCardContainer}>
             <InfoCard heading="Since" value="2016" />
-            <InfoCard heading="Projects" value="214" />
-            <InfoCard heading="Clients" value="108" />
-            <InfoCard heading="Employees" value="32" />
+            <InfoCard heading="Projects" value="36+" />
+            <InfoCard heading="Clients" value="28+" />
+            <InfoCard heading="Team" value="32" />
           </div>
         </div>
         <div className={classes.Wrapper}>
