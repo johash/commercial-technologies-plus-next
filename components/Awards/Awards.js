@@ -18,7 +18,7 @@ const Awards = () => {
             </div>
             <div className={classes.Card}>
               <div>
-                <h5>National Winner</h5>
+                <h5>Western Province Winner</h5>
               </div>
               <span>Best Innovation in Business Process Management</span>
               <p>SLASSCOM National Ingenuity Awards 2021</p>
