@@ -1,0 +1,7 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+Allow: /about-us
+Allow: /contact-us
+Allow: /services
+Allow: /awards
