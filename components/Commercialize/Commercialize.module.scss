@@ -23,7 +23,7 @@
 }
 
 .ImageContainer {
-  width: 100%;
+  width: 1000px;
   span {
     position: unset !important;
   }
@@ -88,6 +88,12 @@
 .Desc {
   color: white;
   text-align: left;
+}
+
+@media (max-width: 1536px) {
+  .ImageContainer {
+    width: 940px;
+  }
 }
 
 @media (max-width: 768px) {

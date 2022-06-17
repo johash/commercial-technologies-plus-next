@@ -97,6 +97,15 @@ const Footer = () => {
           </div>
         </a>
       </div>
+      <div className={classes.PrivacyPolicy}>
+        <span>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+        </span>
+        <span>|</span>
+        <span>
+          <Link href="/terms-of-service">Terms of Service</Link>
+        </span>
+      </div>
       <div className={classes.Rights}>
         <span>All rights reserved 2022 • Commercial Technologies Plus</span>
       </div>

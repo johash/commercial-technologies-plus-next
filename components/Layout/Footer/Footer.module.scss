@@ -44,12 +44,24 @@
   margin-top: 3.8rem;
 }
 
+.PrivacyPolicy {
+  text-align: center;
+  color: #898989;
+  margin-top: 2.5rem;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 .Rights {
   text-align: center;
   color: #898989;
   font-weight: 400;
   font-size: 14px;
-  margin-top: 3.8rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
