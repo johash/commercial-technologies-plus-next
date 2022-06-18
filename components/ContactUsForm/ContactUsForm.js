@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import classes from "./ContactUsForm.module.scss";
 import Image from "next/image";
 import { Checkbox } from "@nextui-org/react";
@@ -7,11 +7,14 @@ import PhoneInput from "react-phone-number-input";
 import emailjs from "@emailjs/browser";
 
 const ContactUsForm = () => {
-  const [selectedBudget, setSelectedBudget] = useState(0);
+  const [selectedBudget, setSelectedBudget] = useState(2);
   const [phoneNumber, setPhoneNumber] = useState();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
+  const [reasons, setReasons] = useState([]);
+  const [build, setBuild] = useState([]);
   const form = useRef();
 
   const onPhoneNumberInputChange = (value) => {
@@ -30,15 +33,74 @@ const ContactUsForm = () => {
     setMessage(event.target.value);
   };
 
+  const onCompanyInputChange = (event) => {
+    setCompany(event.target.value);
+  };
+
+  const lookingForHandler = (event, value) => {
+    let reasonsCopy = [...reasons];
+    if (event) {
+      setReasons((currentReasons) => [...currentReasons, value]);
+      return;
+    }
+
+    let index = reasonsCopy.indexOf(value);
+    reasonsCopy.splice(index, 1);
+    setReasons([...reasonsCopy]);
+  };
+
+  const toBuildHandler = (event, value) => {
+    let buildCopy = [...build];
+    if (event) {
+      setBuild((currentBuild) => [...currentBuild, value]);
+      return;
+    }
+
+    let index = buildCopy.indexOf(value);
+    buildCopy.splice(index, 1);
+    setBuild([...buildCopy]);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+    let budget = 0;
+    switch (selectedBudget) {
+      case 0:
+        budget = "< 10,000 USD";
+        break;
+      case 1:
+        budget = "10,000 - 25,000 USD";
+        break;
+      case 2:
+        budget = "25,000 - 50,000 USD";
+        break;
+      case 3:
+        budget = "50,000 - 100,000 USD";
+        break;
+      case 4:
+        budget = "Over 100,000 USD";
+        break;
+      default:
+        budget = 0;
+    }
+
+    const formData = {
+      name,
+      email,
+      message,
+      contact: phoneNumber,
+      company,
+      budget,
+      lookingFor: reasons.join(", "),
+      toBuild: build.join(", "),
+    };
 
     emailjs
-      .sendForm(
-        "service_wkmpbgr",
-        "template_5l3aspt",
-        form.current,
-        "UyHo0Yqjz2M9nzs-2"
+      .send(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        formData,
+        process.env.NEXT_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -75,6 +137,7 @@ const ContactUsForm = () => {
             onChange={onEmailChange}
           />
           <PhoneInput
+            name="contact"
             placeholder="Enter phone number"
             value={phoneNumber}
             onChange={onPhoneNumberInputChange}
@@ -83,7 +146,14 @@ const ContactUsForm = () => {
             inputComponent={"input"}
             international
           />
-          <input type="text" placeholder="Company" className={classes.Input} />
+          <input
+            type="text"
+            placeholder="Company"
+            name="company"
+            value={company}
+            className={classes.Input}
+            onChange={onCompanyInputChange}
+          />
         </div>
         <div className={classes.MessageInputContainer}>
           <textarea
@@ -99,16 +169,40 @@ const ContactUsForm = () => {
           <span>Looking Commercializers for</span>
           <div className={classes.CommercializersContainer}>
             <div>
-              <Checkbox color="success">Prototype</Checkbox>
+              <Checkbox
+                color="success"
+                onChange={(event) => lookingForHandler(event, "Prototype")}
+              >
+                Prototype
+              </Checkbox>
             </div>
             <div>
-              <Checkbox color="success">Minimum Viable Product (MVP)</Checkbox>
+              <Checkbox
+                color="success"
+                onChange={(event) =>
+                  lookingForHandler(event, "Minimum Viable Product (MVP)")
+                }
+              >
+                Minimum Viable Product (MVP)
+              </Checkbox>
             </div>
             <div>
-              <Checkbox color="success">Complete Product / Platform</Checkbox>
+              <Checkbox
+                color="success"
+                onChange={(event) =>
+                  lookingForHandler(event, "Complete Product / Platform")
+                }
+              >
+                Complete Product / Platform
+              </Checkbox>
             </div>
             <div>
-              <Checkbox color="success">
+              <Checkbox
+                color="success"
+                onChange={(event) =>
+                  lookingForHandler(event, " Support with Existing Product")
+                }
+              >
                 Support with Existing Product{" "}
               </Checkbox>
             </div>
@@ -118,7 +212,10 @@ const ContactUsForm = () => {
           <span>To Build</span>
           <div className={classes.ToBuildContainer}>
             <div className={classes.BuildType}>
-              <Checkbox color="success">
+              <Checkbox
+                color="success"
+                onChange={(event) => toBuildHandler(event, "Web")}
+              >
                 <div className={classes.IconContainer}>
                   <Image
                     src={"/assets/icons/web-1.png"}
@@ -131,7 +228,10 @@ const ContactUsForm = () => {
               </Checkbox>
             </div>
             <div className={classes.BuildType}>
-              <Checkbox color="success">
+              <Checkbox
+                color="success"
+                onChange={(event) => toBuildHandler(event, "iOS")}
+              >
                 <div className={classes.IconContainer}>
                   <Image
                     src={"/assets/icons/apple-1.png"}
@@ -144,7 +244,10 @@ const ContactUsForm = () => {
               </Checkbox>
             </div>
             <div className={classes.BuildType}>
-              <Checkbox color="success">
+              <Checkbox
+                color="success"
+                onChange={(event) => toBuildHandler(event, "Android")}
+              >
                 <div className={classes.IconContainer}>
                   <Image
                     src={"/assets/icons/android-1.png"}
@@ -163,6 +266,7 @@ const ContactUsForm = () => {
           <div className={classes.BudgetContainer}>
             <div>
               <Checkbox
+                name="budget"
                 color="success"
                 onChange={() => setSelectedBudget(0)}
                 isSelected={selectedBudget === 0}
@@ -172,6 +276,7 @@ const ContactUsForm = () => {
             </div>
             <div>
               <Checkbox
+                name="budget"
                 color="success"
                 onChange={() => setSelectedBudget(1)}
                 isSelected={selectedBudget === 1}
@@ -181,6 +286,7 @@ const ContactUsForm = () => {
             </div>
             <div>
               <Checkbox
+                name="budget"
                 color="success"
                 onChange={() => setSelectedBudget(2)}
                 isSelected={selectedBudget === 2}
@@ -190,6 +296,7 @@ const ContactUsForm = () => {
             </div>
             <div>
               <Checkbox
+                name="budget"
                 color="success"
                 onChange={() => setSelectedBudget(3)}
                 isSelected={selectedBudget === 3}
@@ -199,6 +306,7 @@ const ContactUsForm = () => {
             </div>
             <div>
               <Checkbox
+                name="budget"
                 color="success"
                 onChange={() => setSelectedBudget(4)}
                 isSelected={selectedBudget === 4}
