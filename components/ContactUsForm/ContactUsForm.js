@@ -1,10 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import classes from "./ContactUsForm.module.scss";
 import Image from "next/image";
-import { Checkbox } from "@nextui-org/react";
+import { Checkbox, Modal, Loading } from "@nextui-org/react";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import emailjs from "@emailjs/browser";
+
+import Lottie from "react-lottie";
+import SentAnimation from "../../public/assets/animation/email_sent.json";
 
 const ContactUsForm = () => {
   const [selectedBudget, setSelectedBudget] = useState(2);
@@ -15,7 +18,19 @@ const ContactUsForm = () => {
   const [company, setCompany] = useState("");
   const [reasons, setReasons] = useState([]);
   const [build, setBuild] = useState([]);
+  const [viewModal, setViewModal] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [animationStop, setAnimationStop] = useState(true);
   const form = useRef();
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: SentAnimation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   const onPhoneNumberInputChange = (value) => {
     setPhoneNumber(value);
@@ -61,8 +76,22 @@ const ContactUsForm = () => {
     setBuild([...buildCopy]);
   };
 
+  const modalCloseHandler = () => {
+    setViewModal(false);
+    setSelectedBudget(2);
+    setBuild([]);
+    setName("");
+    setEmail("");
+    setPhoneNumber("");
+    setCompany("");
+    setReasons([]);
+    setMessage("");
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
+    setViewModal(true);
     let budget = 0;
     switch (selectedBudget) {
       case 0:
@@ -104,10 +133,15 @@ const ContactUsForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          if (result.status === 200) {
+            setLoading(false);
+            setTimeout(() => {
+              setAnimationStop(false);
+            }, 800);
+          }
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
         }
       );
   };
@@ -329,6 +363,64 @@ const ContactUsForm = () => {
           </button>
         </div>
       </form>
+      <Modal
+        blur
+        closeButton
+        open={viewModal}
+        onClose={modalCloseHandler}
+        className={classes.Modal}
+      >
+        <Modal.Body autoMargin>
+          <div className={classes.ModalContainer}>
+            <div
+              className={
+                loading
+                  ? classes.LoadingContainer
+                  : [
+                      classes.LoadingContainer,
+                      classes.HideLoadingContainer,
+                    ].join(" ")
+              }
+            >
+              <Loading color="success" />
+            </div>
+            <div
+              className={
+                !loading
+                  ? classes.SendAnimationContainer
+                  : classes.HideSendAnimationContainer
+              }
+            >
+              <Lottie
+                options={defaultOptions}
+                width={200}
+                height={200}
+                isStopped={animationStop}
+              />
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <div className={classes.ModalFooter}>
+            <p>
+              {loading ? "Sending Email..." : "We have recieved your email"}
+            </p>
+            <div
+              className={
+                !loading
+                  ? classes.BackButtonContainer
+                  : [classes.HideBackButtonContainer]
+              }
+            >
+              <button
+                className={[classes.Btn, classes.BtnSecondaryOutline].join(" ")}
+              >
+                Back to Home Page
+              </button>
+            </div>
+          </div>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

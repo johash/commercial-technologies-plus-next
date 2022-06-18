@@ -169,6 +169,43 @@
   }
 }
 
+.LoadingContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HideLoadingContainer {
+  display: none;
+}
+
+.SendAnimationContainer {
+  display: flex;
+}
+
+.HideSendAnimationContainer {
+  display: none;
+}
+
+.ModalFooter {
+  width: 100%;
+  text-align: center;
+}
+
+.HideModalFooter {
+  display: none;
+}
+
+.BackButtonContainer {
+  margin-bottom: 2rem;
+}
+
+.HideBackButtonContainer {
+  display: none;
+}
+
 @media (max-width: 1440px) {
   .ContactUsForm {
     width: 50%;
