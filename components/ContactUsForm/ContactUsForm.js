@@ -1,10 +1,11 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import classes from "./ContactUsForm.module.scss";
 import Image from "next/image";
 import { Checkbox, Modal, Loading } from "@nextui-org/react";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import emailjs from "@emailjs/browser";
+import Router from "next/router";
 
 import Lottie from "react-lottie";
 import SentAnimation from "../../public/assets/animation/email_sent.json";
@@ -414,6 +415,7 @@ const ContactUsForm = () => {
             >
               <button
                 className={[classes.Btn, classes.BtnSecondaryOutline].join(" ")}
+                onClick={() => Router.push("/")}
               >
                 Back to Home Page
               </button>
