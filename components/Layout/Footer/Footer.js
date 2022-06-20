@@ -21,7 +21,7 @@ const Footer = () => {
         <div className={classes.NavLeft}>
           <Link href="/about-us">Company</Link>
           <Link href="/services">Services</Link>
-          <Link href="/coming-soon">Case Studies</Link>
+          <Link href="/case-studies">Case Studies</Link>
           <Link href="/awards">Awards</Link>
         </div>
         <div className={classes.NavRight}>

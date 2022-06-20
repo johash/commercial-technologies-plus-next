@@ -1,0 +1,65 @@
+.CaseStudyCard {
+  background-color: rgb(116, 116, 116);
+  height: 400px;
+}
+
+.Container {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  height: 100%;
+}
+
+.Content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h6 {
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+  }
+}
+
+.ButtonContainer {
+  button {
+    background-color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.IconContainer {
+  width: 24px;
+  span {
+    position: unset !important;
+  }
+  .Icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 428px) {
+  .CaseStudyCard {
+    height: 350px;
+  }
+  .Content {
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}

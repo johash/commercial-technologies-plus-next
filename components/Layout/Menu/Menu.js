@@ -70,7 +70,7 @@ const Menu = (props) => {
           </Link>
         </div>
         <div className={classes.MenuItem}>
-          <Link href="/coming-soon">
+          <Link href="/case-studies">
             <div className={classes.IconContainer}>
               <div className={classes.GreenContainer}>
                 <div className={classes.ImageContainer}>
@@ -84,7 +84,7 @@ const Menu = (props) => {
               </div>
             </div>
           </Link>
-          <Link href="/coming-soon">
+          <Link href="/case-studies">
             <span>Case Studies</span>
           </Link>
         </div>

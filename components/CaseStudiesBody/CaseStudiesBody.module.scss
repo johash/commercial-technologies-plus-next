@@ -1,0 +1,76 @@
+.Container {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 120px;
+  //   padding-bottom: 120px;
+}
+
+.Heading {
+  text-align: center;
+
+  h2 {
+    color: black;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0;
+    color: #aaaaaa;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+
+.StudiesContainer {
+  margin-top: 90px;
+}
+
+.SubContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+.Footer {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #6a6a6a;
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .SubContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 428px) {
+  .Container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .Heading {
+    h2 {
+      font-weight: 600;
+      font-size: 30px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .SubContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}

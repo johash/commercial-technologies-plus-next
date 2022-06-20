@@ -1,0 +1,98 @@
+@import "../../styles/index.module.scss";
+
+.CaseStudiesHeader {
+  background-color: #2b3756;
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding-left: 120px;
+  position: relative;
+}
+
+.Container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TextContainer {
+  h1 {
+    color: #a8d100;
+    font-weight: 600;
+    font-size: 56px;
+    span {
+      color: white;
+    }
+  }
+  p {
+    color: #e5e5e5;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.ButtonContainer {
+  margin-top: 40px;
+}
+
+.ImageContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.ImageWrapper {
+  width: 1080px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 1536px) {
+  .ImageWrapper {
+    width: 780px;
+  }
+}
+
+@media (max-width: 428px) {
+  .CaseStudiesHeader {
+    padding-left: 0;
+    height: fit-content;
+  }
+  .Container {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 70px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .TextContainer {
+    text-align: center;
+    h1 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  .ImageContainer {
+    position: initial;
+    margin-top: 20px;
+  }
+  .ImageWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ImageWrapper {
+    width: 100%;
+  }
+}
