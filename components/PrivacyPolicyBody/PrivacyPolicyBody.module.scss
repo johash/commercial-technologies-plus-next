@@ -28,3 +28,21 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 1024px) {
+  .Container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .TextContent {
+    h6 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
