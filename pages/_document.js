@@ -35,6 +35,41 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="keywords"
+            content="saas, saas company, commercialtechnologies, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+          ></meta>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta charset="UTF-8" />
+          <meta http-equiv="content-language" content="en-US" />
+          <meta
+            property="og:title"
+            content="Commericialize Your Ideas | Commercial Technologies Plus"
+          />
+          <meta
+            property="og:description"
+            content="A trusted SaaS based product development company excels at building secure and scalable enterprise-class software solutions."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="url " />
+          <meta property="og:url" content="https://www.commercialtp.com/" />
+          <meta property="og:locale" content="en-US" />
+          <meta
+            property="og:site_name"
+            content="Commercial Technologies Plus"
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@commercialtech" />
+          <meta name="twitter:creator" content="@commercialtech" />
+          <meta
+            name="twitter:title"
+            content="Commericialize Your Ideas | Commercial TechnologiesPlus"
+          />
+          <meta
+            name="twitter:description"
+            content="A trusted SaaS based product development company excels at building secure and scalable enterprise-class software solutions."
+          />
+          <meta name="twitter:image" content="url"></meta>
         </Head>
         <body>
           <Main />

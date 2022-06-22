@@ -1,7 +1,3 @@
-# Allow all crawlers
 User-agent: *
-Allow: /
-Allow: /about-us
-Allow: /contact-us
-Allow: /services
-Allow: /awards
+Disallow:/coming-soon/
+Sitemap: https://www.commercialtp.com/sitemap.xml
