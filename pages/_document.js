@@ -39,9 +39,8 @@ class MyDocument extends Document {
             name="keywords"
             content="saas, saas company, commercialtechnologies, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
           ></meta>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charset="UTF-8" />
-          <meta http-equiv="content-language" content="en-US" />
+          <meta httpEquiv="content-language" content="en-US" />
           <meta
             property="og:title"
             content="Commericialize Your Ideas | Commercial Technologies Plus"
