@@ -32,7 +32,8 @@ const HomePage = () => {
         location="bottom"
         buttonText="Accept and close"
         overlay
-        buttonClasses={[classes.Btn, classes.BtnPrimary].join(" ")}
+        containerClasses={classes.CookieConsentContainer}
+        buttonClasses={classes.CookieConsentButton}
       >
         We use cookies to ensure you get the best experience. By using our
         website you agree to our{" "}
