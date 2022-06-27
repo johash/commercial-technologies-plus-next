@@ -1,3 +1,4 @@
+import classes from "../styles/index.module.scss";
 import Layout from "../components/Layout/Layout";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import OurFocus from "../components/OurFocus/OurFocus";
@@ -7,6 +8,8 @@ import StartProject from "../components/StartProject/StartProject";
 import TechStack from "../components/TechStack/TechStack";
 
 import Head from "next/head";
+import Link from "next/link";
+import CookieConsent from "react-cookie-consent";
 
 const HomePage = () => {
   return (
@@ -25,6 +28,16 @@ const HomePage = () => {
       <Awards />
       <TechStack />
       <StartProject />
+      <CookieConsent
+        location="bottom"
+        buttonText="Accept and close"
+        overlay
+        buttonClasses={[classes.Btn, classes.BtnPrimary].join(" ")}
+      >
+        We use cookies to ensure you get the best experience. By using our
+        website you agree to our{" "}
+        <Link href="/privacy-policy">Privacy policy.</Link>
+      </CookieConsent>
     </Layout>
   );
 };
