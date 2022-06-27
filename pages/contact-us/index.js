@@ -16,7 +16,7 @@ const ContactPage = () => {
         <title>Contact Us | Commercial Technologies Plus</title>
         <meta
           name="keywords"
-          content="saas, saas company, commercialtechnologies, contact us, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+          content="commercialtechnologies contact, contact us, SaaS company, SaaS, software company, software development, web development, mobile development, SaaS platform development company"
         ></meta>
       </Head>
       <ContactHeader />

@@ -40,7 +40,7 @@ class MyDocument extends Document {
           <meta httpEquiv="content-language" content="en-US" />
           <meta
             property="og:title"
-            content="Commericialize Your Ideas | Commercial Technologies Plus"
+            content="Commercialize Your Ideas | Commercial Technologies Plus"
           />
           <meta
             property="og:description"
@@ -62,7 +62,7 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@commercialtech" />
           <meta
             name="twitter:title"
-            content="Commericialize Your Ideas | Commercial TechnologiesPlus"
+            content="Commercialize Your Ideas | Commercial Technologies Plus"
           />
           <meta
             name="twitter:description"

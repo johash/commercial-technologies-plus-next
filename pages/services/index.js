@@ -16,7 +16,7 @@ const ServicesPage = () => {
         <title>Services | Commercial Technologies Plus</title>
         <meta
           name="keywords"
-          content="saas, saas company, commercialtechnologies, services, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+          content="commercialtechnologies services, services, web development, SaaS, it outsourcing, ux design, business analysis, mobile development, software development, SaaS platform development company"
         ></meta>
       </Head>
       <ServicesHeader />
