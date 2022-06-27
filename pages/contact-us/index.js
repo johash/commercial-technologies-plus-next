@@ -14,6 +14,10 @@ const ContactPage = () => {
           content="We are open to discuss and commercialize your innovative ideas. Contact Us Commercializers today to build the right product with the right team."
         />
         <title>Contact Us | Commercial Technologies Plus</title>
+        <meta
+          name="keywords"
+          content="saas, saas company, commercialtechnologies, contact us, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+        ></meta>
       </Head>
       <ContactHeader />
       <ContactSpacer />

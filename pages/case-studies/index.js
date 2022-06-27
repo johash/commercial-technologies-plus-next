@@ -11,9 +11,13 @@ const CaseStudiesPage = () => {
       <Head>
         <meta
           name="description"
-          content="Review our case studies that helped our clientele to evolve to the next level. Get inspired by the value we delivered."
+          content="Explore our case studies across multiple tech markets and industries. Get inspired by the results we deliver to our clients."
         />
         <title>Case Studies | Commercial Technologies Plus</title>
+        <meta
+          name="keywords"
+          content="saas, saas company, commercialtechnologies, case studies, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+        ></meta>
       </Head>
       <CaseStudiesHeader />
       <CaseStudiesBody />

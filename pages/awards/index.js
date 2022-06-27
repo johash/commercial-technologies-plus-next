@@ -19,6 +19,10 @@ const AwardsPage = () => {
           content="Take a quick peek about awards achieved by Commercial Technologies Plus for the excellency and expertise in the industry."
         />
         <title>Awards | Commercial Technologies Plus</title>
+        <meta
+          name="keywords"
+          content="saas, saas company, commercialtechnologies, awards, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+        ></meta>
       </Head>
       <div className={classes.AwardsPageContainer}>
         <AwardsHeader />

@@ -20,6 +20,11 @@ const HomePage = () => {
           content="Commercial Technologies Plus is a trusted SaaS product development company excels at building secure and scalable enterprise-class software solutions."
         />
         <title>Commercialize Your Ideas | Commercial Technologies Plus</title>
+        <link rel="canonical" href="https://www.commercialtp.com/" />
+        <meta
+          name="keywords"
+          content="saas, saas company, commercialtechnologies, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+        ></meta>
       </Head>
 
       <Jumbotron />

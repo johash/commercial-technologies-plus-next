@@ -14,6 +14,10 @@ const AboutUsPage = () => {
           content="Commercial Technologies Plus is an award-winning product development company in Sri Lanka that's trusted by many well-known enterprises & startups."
         />
         <title>Company | Commercial Technologies Plus</title>
+        <meta
+          name="keywords"
+          content="saas, saas company, commercialtechnologies, about us, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
+        ></meta>
       </Head>
       <AboutUsHeader />
       <AboutUsBody />

@@ -35,10 +35,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
-          <meta
-            name="keywords"
-            content="saas, saas company, commercialtechnologies, web development, software development, ux design, commercialtp, top saas company, mobile development, commercializers, saas platform development company"
-          ></meta>
+
           <meta charset="UTF-8" />
           <meta httpEquiv="content-language" content="en-US" />
           <meta
@@ -52,7 +49,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
-            content="/public/assets/ctp_socialBanner.png"
+            content="https://www.commercialtp.com/assets/ctp_socialBanner.png"
           />
           <meta property="og:url" content="https://www.commercialtp.com/" />
           <meta property="og:locale" content="en-US" />
@@ -73,7 +70,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="/public/assets/ctp_socialBanner.png"
+            content="https://www.commercialtp.com/assets/ctp_socialBanner.png"
           ></meta>
         </Head>
         <body>
