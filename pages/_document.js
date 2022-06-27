@@ -50,7 +50,10 @@ class MyDocument extends Document {
             content="A trusted SaaS based product development company excels at building secure and scalable enterprise-class software solutions."
           />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="url " />
+          <meta
+            property="og:image"
+            content="/public/assets/ctp_socialBanner.png"
+          />
           <meta property="og:url" content="https://www.commercialtp.com/" />
           <meta property="og:locale" content="en-US" />
           <meta
@@ -68,7 +71,10 @@ class MyDocument extends Document {
             name="twitter:description"
             content="A trusted SaaS based product development company excels at building secure and scalable enterprise-class software solutions."
           />
-          <meta name="twitter:image" content="url"></meta>
+          <meta
+            name="twitter:image"
+            content="/public/assets/ctp_socialBanner.png"
+          ></meta>
         </Head>
         <body>
           <Main />
