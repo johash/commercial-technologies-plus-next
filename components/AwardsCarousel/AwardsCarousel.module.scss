@@ -1,62 +1,25 @@
 .AwardsCarousel {
   width: 100%;
   height: 350px;
-  overflow-x: hidden;
+  padding-top: 1rem;
 }
 
-.Container {
-  height: 100%;
-  width: min-content;
+.AwardsSwiperContainer {
+  width: 100% !important;
+  height: 20rem;
+}
+
+.AwardsSwiperSlide {
+  // width: auto !important;
   display: flex;
-  overflow-x: hidden;
-  position: relative;
-  animation: scroll 5s linear infinite alternate;
+  justify-content: center;
+  align-items: center;
 }
 
-.ImageContainer {
-  width: 480px;
-  // width: 33.33%;
+.Image {
+  display: block;
+  width: 100%;
   height: 100%;
-  position: relative;
-  .Image {
-    width: 100%;
-    height: 100%;
-    position: relative !important;
-    object-fit: cover; // Optional
-  }
-}
-
-@media (max-width: 768px) {
-  .AwardsCarousel {
-    height: 270px;
-  }
-  .ImageContainer {
-    width: 350px;
-  }
-  .Container {
-    animation: scroll 15s linear infinite alternate;
-  }
-}
-
-@media (max-width: 428px) {
-  .AwardsCarousel {
-    height: 230px;
-  }
-  .ImageContainer {
-    width: 250px;
-  }
-  .Container {
-    animation: scroll 15s linear infinite alternate;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    // transform: translateX(0);
-    left: 0;
-  }
-  100% {
-    // transform: translateX(-33%);
-    left: calc(480px * -2);
-  }
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
