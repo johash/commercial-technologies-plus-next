@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import classes from "./FocusCard.module.scss";
 import Image from "next/image";
 import { useWindowSize } from "../../../hooks/useWindowSize";
+import { motion } from "framer-motion";
 
 const FocusCard = (props) => {
   const [showText, setShowText] = useState(false);
@@ -12,7 +13,17 @@ const FocusCard = (props) => {
   };
 
   return (
-    <div className={classes.FocusCard}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.3, delay: 0.4 }}
+      variants={{
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0.8 },
+      }}
+      className={classes.FocusCard}
+    >
       <div className={classes.IconContainer}>
         <Image src={props.icon} layout="fill" className={classes.Icon} />
       </div>
@@ -34,7 +45,7 @@ const FocusCard = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,7 +1,13 @@
 import classes from "./Commercialize.module.scss";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Commercialize = () => {
+  const variants = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: { opacity: 0, scale: 0.8 },
+  };
+
   return (
     <div className={classes.Commercialize}>
       <div className={classes.Container}>
@@ -15,7 +21,16 @@ const Commercialize = () => {
               className={classes.Image}
             />
           </div>
-          <div className={classes.Card1}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.4 }}
+            variants={variants}
+            className={classes.Card1}
+          >
             <div className={classes.CardHeading}>
               <div className={classes.IconContainer}>
                 <Image
@@ -34,8 +49,17 @@ const Commercialize = () => {
                 quickly
               </p>
             </div>
-          </div>
-          <div className={classes.Card2}>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.4 }}
+            variants={variants}
+            className={classes.Card2}
+          >
             <div className={classes.CardHeading}>
               <div className={classes.IconContainer}>
                 <Image
@@ -54,8 +78,17 @@ const Commercialize = () => {
                 quickly
               </p>
             </div>
-          </div>
-          <div className={classes.Card3}>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            variants={variants}
+            className={classes.Card3}
+          >
             <div className={classes.CardHeading}>
               <div className={classes.IconContainer}>
                 <Image
@@ -74,7 +107,7 @@ const Commercialize = () => {
                 quickly
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -43,6 +43,9 @@
   position: absolute;
   top: 76px;
   left: 0;
+  * {
+    cursor: default;
+  }
 }
 
 .Card2 {
@@ -53,6 +56,9 @@
   position: absolute;
   right: 0;
   top: 126px;
+  * {
+    cursor: default;
+  }
 }
 
 .Card3 {
@@ -63,6 +69,9 @@
   position: absolute;
   bottom: 0;
   right: 210px;
+  * {
+    cursor: default;
+  }
 }
 
 .CardHeading {
