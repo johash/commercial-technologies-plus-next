@@ -88,6 +88,15 @@ const AwardsCarousel = () => {
             />
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className={classes.ImageContainer}>
+            <Image
+              src="/assets/awards/c7.png"
+              layout="fill"
+              className={classes.Image}
+            />
+          </div>
+        </SwiperSlide>
       </Swiper>
     </section>
   );
