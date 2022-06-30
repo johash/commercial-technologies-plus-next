@@ -27,28 +27,29 @@ const FaqBody = () => {
           <motion.div
             className={classes.Section}
             variants={container}
+            viewport={{ once: true }}
             initial="hidden"
             animate="show"
           >
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
               />
             </motion.div>
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
               />
             </motion.div>
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
               />
             </motion.div>
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
@@ -61,25 +62,25 @@ const FaqBody = () => {
             initial="hidden"
             animate="show"
           >
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
               />
             </motion.div>
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
               />
             </motion.div>
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
               />
             </motion.div>
-            <motion.div variants={item}>
+            <motion.div variants={item} viewport={{ once: true }}>
               <QACard
                 title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 answer="Etiam pretium sollicitudin cursus. Nam justo mi, eleifend quis ornare sed, mollis non lorem. Sed commodo velit eu augue porttitor, sit amet facilisis libero placerat. Vestibulum augue erat, vestibulum eu fermentum eget, tincidunt non tortor."
