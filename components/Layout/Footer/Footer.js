@@ -27,7 +27,7 @@ const Footer = () => {
         <div className={classes.NavRight}>
           <Link href="https://boards.rooster.jobs/9205">Careers</Link>
           <Link href="https://medium.com/@commercialtp">Blog</Link>
-          <Link href="/coming-soon">FAQ</Link>
+          <Link href="/faq">FAQ</Link>
           <Link href="/contact-us">Contact Us</Link>
         </div>
       </div>
