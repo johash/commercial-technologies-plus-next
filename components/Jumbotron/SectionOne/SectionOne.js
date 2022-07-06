@@ -28,7 +28,7 @@ const SectionOne = () => {
           autoplay={{
             delay: 4000,
           }}
-          direction="vertical"
+          direction="horizontal"
           slidesPerView={1}
           loop
           effect={"flip"}

@@ -22,27 +22,28 @@ const FocusCard = (props) => {
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0.8 },
       }}
-      className={classes.FocusCard}
     >
-      <div className={classes.IconContainer}>
-        <Image src={props.icon} layout="fill" className={classes.Icon} />
-      </div>
-      <div className={classes.Content}>
-        <h5>{props.heading}</h5>
-        <p>
-          {showText
-            ? props.description
-            : windowSize.width >= 428
-            ? props.description
-            : props.description.slice(0, 150) + "..."}
-        </p>
-        <div>
-          <button
-            className={classes.SeeMoreButton}
-            onClick={toggleTextVisiblity}
-          >
-            {showText ? "See Less" : "See More"}
-          </button>
+      <div className={classes.FocusCard}>
+        <div className={classes.IconContainer}>
+          <Image src={props.icon} layout="fill" className={classes.Icon} />
+        </div>
+        <div className={classes.Content}>
+          <h5>{props.heading}</h5>
+          <p>
+            {showText
+              ? props.description
+              : windowSize.width >= 428
+              ? props.description
+              : props.description.slice(0, 150) + "..."}
+          </p>
+          <div>
+            <button
+              className={classes.SeeMoreButton}
+              onClick={toggleTextVisiblity}
+            >
+              {showText ? "See Less" : "See More"}
+            </button>
+          </div>
         </div>
       </div>
     </motion.div>
