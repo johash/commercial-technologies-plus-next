@@ -36,7 +36,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <meta charset="UTF-8" />
+          <meta charSet="UTF-8" />
           <meta httpEquiv="content-language" content="en-US" />
           <meta
             property="og:title"

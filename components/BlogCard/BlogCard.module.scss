@@ -1,0 +1,47 @@
+@import "../../styles/index.module.scss";
+
+.BlogCard {
+  box-shadow: 0px 6px 15px rgba(178, 189, 218, 0.2);
+  border-radius: 10px;
+  padding: 35px 25px;
+  background-color: white;
+  max-width: 600px;
+}
+
+.CardHeader {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  b {
+    font-weight: 400;
+    font-size: 18px;
+    color: #00b3de;
+  }
+  span {
+    font-weight: 600;
+    font-size: 26px;
+    color: #2b3756;
+  }
+}
+
+.CardBody {
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: #6d6d6d;
+  }
+}
+
+.ImageContainer {
+  width: 100%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

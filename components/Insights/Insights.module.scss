@@ -1,0 +1,57 @@
+.Insights {
+  width: 100%;
+  background-color: #e5e5e5;
+  padding-bottom: 6rem;
+}
+
+.Container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.Heading {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: 600;
+    font-size: 42px;
+    color: #168eb4;
+  }
+}
+
+.ArrowContainer {
+  width: 55px;
+  span {
+    position: unset !important;
+  }
+  .ArrowIcon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.CardContainer {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.LeftContainer {
+  margin-top: 100px;
+}
+
+.RightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
