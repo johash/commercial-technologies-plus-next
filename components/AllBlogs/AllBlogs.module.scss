@@ -52,7 +52,7 @@
   justify-content: center;
   margin-top: 170px;
   padding-bottom: 4rem;
-  h1 {
+  h2 {
     text-align: center;
     font-weight: 600;
     font-size: 36px;
@@ -68,4 +68,28 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 25px;
   grid-row-gap: 25px;
+}
+
+@media (max-width: 1536px) {
+  .Container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .InputGroup {
+    width: 75%;
+  }
+  .Container {
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .BlogArea {
+    margin-top: 120px;
+    h2 {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
+  }
 }
