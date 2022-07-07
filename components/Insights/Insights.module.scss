@@ -65,3 +65,21 @@
     width: 90%;
   }
 }
+
+@media (max-width: 428px) {
+  .Heading {
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .Container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .CardContainer {
+    flex-direction: column;
+  }
+  .LeftContainer {
+    margin-top: 20px;
+  }
+}

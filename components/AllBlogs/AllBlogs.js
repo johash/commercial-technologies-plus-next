@@ -10,6 +10,7 @@ const AllBlogs = () => {
           <input type="search" placeholder="Search for 100+ blog posts..." />
           <span>Search</span>
         </div>
+        <button className={classes.SearchButton}>Search</button>
       </div>
       <div className={classes.BlogArea}>
         <h2>Resources for makers & creatives to learn, sell & grow</h2>
