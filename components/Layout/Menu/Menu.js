@@ -12,16 +12,15 @@ const Menu = (props) => {
     <div className={styleClasses.join(" ")}>
       <div className={classes.Header}>
         <div className={classes.Logo}>
-          <a href="/">
-            <span>
-              <div>
-                <img
-                  src="/assets/logo.png"
-                  alt="commercial-technologies-plus"
-                />
-              </div>
-            </span>
-          </a>
+          <Link href="/">
+            <div className={classes.LogoContainer}>
+              <Image
+                src="/assets/logo.png"
+                layout="fill"
+                className={classes.LogoImage}
+              />
+            </div>
+          </Link>
         </div>
         <div className={classes.ButtonContainer}>
           <button onClick={props.toggleMenu}>

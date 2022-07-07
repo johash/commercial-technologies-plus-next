@@ -1,18 +1,22 @@
 import classes from "./Header.module.scss";
 import { MdMenu } from "react-icons/md";
 import Router from "next/router";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = (props) => {
   return (
     <div className={classes.Header}>
       <div className={classes.Logo}>
-        <a href="/">
-          <span>
-            <div>
-              <img src="/assets/logo.png" alt="commercial-technologies-plus" />
-            </div>
-          </span>
-        </a>
+        <Link href="/">
+          <div className={classes.LogoContainer}>
+            <Image
+              src="/assets/logo.png"
+              layout="fill"
+              className={classes.LogoImage}
+            />
+          </div>
+        </Link>
       </div>
       <div className={classes.Navigation}>
         <button

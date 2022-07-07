@@ -35,6 +35,19 @@
   }
 }
 
+.LogoContainer {
+  width: 190px;
+  span {
+    position: unset !important;
+  }
+  .LogoImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
 @media (max-width: 768px) {
   .Header {
     padding-left: 4.5rem;
@@ -49,5 +62,8 @@
   }
   .ActionButton {
     display: none;
+  }
+  .LogoContainer {
+    width: 170px;
   }
 }

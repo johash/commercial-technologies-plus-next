@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   margin-top: 170px;
   padding-bottom: 4rem;
   h2 {
@@ -65,7 +65,7 @@
   width: 65%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  // grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 }
