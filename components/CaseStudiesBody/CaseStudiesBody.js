@@ -1,5 +1,6 @@
 import classes from "./CaseStudiesBody.module.scss";
 import CaseStudyCard from "./CaseStudyCard/CaseStudyCard";
+import Router from "next/router";
 
 const CaseStudiesBody = () => {
   return (
@@ -14,8 +15,8 @@ const CaseStudiesBody = () => {
         </div>
         <div className={classes.StudiesContainer}>
           <div className={classes.SubContainer}>
-            <CaseStudyCard title="Billable Web POS" />
-            <CaseStudyCard title="Billable Mobile POS" />
+            <CaseStudyCard title="Billable Web POS" onClick={() => {Router.push('/case-studies/billable-web-pos')}}/>
+            <CaseStudyCard title="Billable Mobile POS" onClick={() => {Router.push('/case-studies/billable-mobile-pos')}}/>
             <CaseStudyCard title="Billable Simple Invoice" />
             <CaseStudyCard title="Billable eCommerce" />
             <CaseStudyCard title="Billable Order Management" />

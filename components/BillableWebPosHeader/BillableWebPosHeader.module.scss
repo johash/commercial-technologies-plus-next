@@ -1,0 +1,75 @@
+.BillableWebPosHeader {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: white;
+    position: relative;
+    padding-left: 120px;
+}
+
+.Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.TextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 20rem;
+    margin-top: 15rem;
+    * {
+        margin: 0;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 56px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 22px;
+        color: #00B3DE;
+    }
+    z-index: 5;
+}
+
+.LaptopImageContainer {
+    width: 1170px;
+    span {
+      position: unset !important;
+    }
+    .Image {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+  }
+
+  .BackgroundContainer {
+    width: 1470px;
+    span {
+      position: unset !important;
+    }
+    .Image {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+  }
+
+  .LaptopImageWrapper {
+    position: absolute;
+    bottom: -200px;
+    z-index: 1;
+  }
+
+  .BackgroundWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }

@@ -1,6 +1,10 @@
 .CaseStudyCard {
   background-color: rgb(116, 116, 116);
   height: 400px;
+  * {
+    cursor: pointer;
+  }
+  
 }
 
 .Container {

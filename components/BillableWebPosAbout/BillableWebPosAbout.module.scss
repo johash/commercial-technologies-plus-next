@@ -1,0 +1,28 @@
+.BillableWebPosAbout {
+  background-color: #2b3756;
+  width: 100%;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 300px;
+  padding-bottom: 190px;
+}
+
+.TextContainer {
+  text-align: center;
+  color: white;
+}
+
+.CardContainer {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}

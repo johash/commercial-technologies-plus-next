@@ -3,7 +3,7 @@ import classes from "./CaseStudyCard.module.scss";
 
 const CaseStudyCard = (props) => {
   return (
-    <div className={classes.CaseStudyCard}>
+    <div className={classes.CaseStudyCard} onClick={props.onClick}>
       <div className={classes.Container}>
         <div className={classes.Content}>
           <h6>{props.title}</h6>

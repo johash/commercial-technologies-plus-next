@@ -1,0 +1,34 @@
+.BillableWebPosDevelopment {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.Container {
+  padding-top: 180px;
+  padding-left: 215px;
+  padding-bottom: 180px;
+}
+
+.TextContainer {
+  width: 40%;
+}
+
+.ImageWrapper {
+  position: absolute;
+  right: 120px;
+  bottom: -50px;
+}
+
+.ImageContainer {
+  width: 640px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
