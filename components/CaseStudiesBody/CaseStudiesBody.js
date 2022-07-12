@@ -14,15 +14,65 @@ const CaseStudiesBody = () => {
           </p>
         </div>
         <div className={classes.StudiesContainer}>
-          <div className={classes.SubContainer}>
-            <CaseStudyCard title="Billable Web POS" onClick={() => {Router.push('/case-studies/billable-web-pos')}}/>
-            <CaseStudyCard title="Billable Mobile POS" onClick={() => {Router.push('/case-studies/billable-mobile-pos')}}/>
-            <CaseStudyCard title="Billable Simple Invoice" />
-            <CaseStudyCard title="Billable eCommerce" />
-            <CaseStudyCard title="Billable Order Management" />
-            <CaseStudyCard title="Commerecial Prime" />
-            <CaseStudyCard title="CalendQ" />
-            <CaseStudyCard title="Dialog SmartCare" />
+          <div className={classes.ContainerLeft}>
+            <div className={classes.BillableWebPos}>
+              <CaseStudyCard
+                title="Billable Web POS"
+                onClick={() => {
+                  Router.push("/case-studies/billable-web-pos");
+                }}
+                imageUrl={"/assets/case-studies/1.png"}
+              />
+            </div>
+            <div className={classes.BillableECommerce}>
+              <CaseStudyCard
+                title="Billable eCommerce"
+                imageUrl={"/assets/case-studies/2.png"}
+              />
+            </div>
+            <div className={classes.CalendQ}>
+              <CaseStudyCard
+                title="CalendQ"
+                imageUrl={"/assets/case-studies/3.png"}
+              />
+            </div>
+          </div>
+          <div className={classes.ContainerMid}>
+            <div className={classes.BillableMobilePos}>
+              <CaseStudyCard
+                title="Billable Mobile POS"
+                onClick={() => {
+                  Router.push("/case-studies/billable-mobile-pos");
+                }}
+                imageUrl={"/assets/case-studies/4.png"}
+              />
+            </div>
+            <div className={classes.BillableOrderManagement}>
+              <CaseStudyCard
+                title="Billable Order Management"
+                imageUrl={"/assets/case-studies/5.png"}
+              />
+            </div>
+            <div className={classes.DialogSmartCare}>
+              <CaseStudyCard
+                title="Dialog SmartCare"
+                imageUrl={"/assets/case-studies/4.png"}
+              />
+            </div>
+          </div>
+          <div className={classes.ContainerRight}>
+            <div className={classes.BillableSimpleInvoice}>
+              <CaseStudyCard
+                title="Billable Simple Invoice"
+                imageUrl={"/assets/case-studies/7.png"}
+              />
+            </div>
+            <div className={classes.CommercialPrime}>
+              <CaseStudyCard
+                title="Commerecial Prime"
+                imageUrl={"/assets/case-studies/8.png"}
+              />
+            </div>
           </div>
         </div>
         <div className={classes.Footer}>

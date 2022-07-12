@@ -19,7 +19,15 @@ const CaseStudyCard = (props) => {
             </button>
           </div>
         </div>
-        <div className={classes.ImageContainer}></div>
+        <div className={classes.ImageWrapper}>
+          <div className={classes.ImageContainer}>
+            <Image
+              src={props.imageUrl}
+              layout="fill"
+              className={classes.Image}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

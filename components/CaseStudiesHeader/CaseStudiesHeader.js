@@ -10,9 +10,8 @@ const CaseStudiesHeader = () => {
             Let Our Case Studies Speak, <span>Get Experienced!</span>
           </h1>
           <p>
-            Morbi bibendum risus vel ullamcorper lacus libero et. Elementum
-            laoreet bibendum lorem elit empor vel sit vel eleifend volutpat sit
-            ac ut.
+            Explore our case studies across multiple tech markets and
+            industries. Get inspired by the results we deliver to our clients.
           </p>
           <div className={classes.ButtonContainer}>
             <button className={[classes.Btn, classes.BtnTrans].join(" ")}>

@@ -25,14 +25,27 @@
 
 .StudiesContainer {
   margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.SubContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+.ContainerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ContainerMid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ContainerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .Footer {
@@ -43,14 +56,42 @@
   margin-top: 90px;
 }
 
+.BillableWebPos {
+  height: 400px;
+}
+
+.BillableECommerce {
+  height: 460px;
+}
+
+.CalendQ {
+  height: 400px;
+}
+
+.BillableMobilePos {
+  height: 500px;
+}
+
+.BillableOrderManagement {
+  height: 420px;
+}
+
+.DialogSmartCare {
+  height: 500px;
+}
+
+.BillableSimpleInvoice {
+  height: 400px;
+}
+
+.CommercialPrime {
+  height: 470px;
+}
+
 @media (max-width: 768px) {
   .Container {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-  }
-  .SubContainer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
   }
 }
 
@@ -69,8 +110,34 @@
       font-size: 14px;
     }
   }
-  .SubContainer {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+  .StudiesContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .BillableWebPos {
+    height: 341px;
+  }
+  .BillableECommerce {
+    height: 400px;
+  }
+  .CalendQ {
+    height: 341px;
+  }
+  .BillableMobilePos {
+    height: 426px;
+  }
+  .BillableOrderManagement {
+    height: 358px;
+  }
+  .DialogSmartCare {
+    height: 426px;
+  }
+  .BillableSimpleInvoice {
+    height: 341px;
+  }
+  .CommercialPrime {
+    height: 401px;
   }
 }

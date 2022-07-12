@@ -8,9 +8,8 @@ const ServicesHeader = () => {
         <div className={classes.TextContent}>
           <h1>Go Beyond What’s Possible</h1>
           <p>
-            We’re a tech startup company founded in 2016 in a beautiful country
-            of Asia. We were known as the Smart Mobility Enterprise Solutions
-            Provider.{" "}
+            Harness the power of the latest technologies and experience
+            innovative, strategic and scalable solutions with us.
           </p>
           <div className={classes.ActionButtonContainer}>
             <button className={[classes.Btn, classes.BtnSecondary].join(" ")}>

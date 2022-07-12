@@ -9,9 +9,10 @@ const AboutUsHeader = () => {
         <div className={classes.TextContent}>
           <h1>Great things starts with a great team</h1>
           <p>
-            We’re a tech startup company founded in 2016 in a beautiful country
-            of Asia. We were known as the Smart Mobility Enterprise Solutions
-            Provider.{" "}
+            Commercial Technologies Plus is a team of self-driven, experienced,
+            and enthusiastic people that boosts your company's capabilities to
+            gain a competitive edge meanwhile achieving the company vision and
+            mission.
           </p>
           <div className={classes.InfoCardContainer}>
             <InfoCard heading="Since" value="2016" />
