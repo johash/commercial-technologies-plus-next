@@ -113,6 +113,30 @@
   .StudiesContainer {
     flex-direction: column;
   }
+  .BillableWebPos {
+    height: 360px;
+  }
+  .BillableECommerce {
+    height: 423px;
+  }
+  .CalendQ {
+    height: 360px;
+  }
+  .BillableMobilePos {
+    height: 450px;
+  }
+  .BillableOrderManagement {
+    height: 378px;
+  }
+  .DialogSmartCare {
+    height: 450px;
+  }
+  .BillableSimpleInvoice {
+    height: 360px;
+  }
+  .CommercialPrime {
+    height: 423px;
+  }
 }
 
 @media (max-width: 375px) {

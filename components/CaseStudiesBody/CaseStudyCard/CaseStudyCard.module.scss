@@ -86,6 +86,15 @@
   }
 }
 
+@media (max-width: 428px) {
+  .CaseStudyCard {
+    width: 100%;
+  }
+  .ImageContainer {
+    width: 345px;
+  }
+}
+
 @media (max-width: 375px) {
   .CaseStudyCard {
     width: 100%;
