@@ -117,11 +117,12 @@
     padding-top: 5rem;
   }
   .LaptopImageContainer {
-    width: 375px;
+    width: 545px;
   }
   .LaptopImageWrapper {
-    bottom: 0;
+    bottom: -80px;
     right: 0;
+    left: 0;
   }
   .TextContainer {
     text-align: center;
@@ -134,5 +135,9 @@
     p {
       font-size: 17px;
     }
+  }
+  .BackgroundWrapper {
+    top: 40px;
+    left: -420px;
   }
 }
