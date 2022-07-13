@@ -1,0 +1,116 @@
+@import "../../styles/index.module.scss";
+
+.StartProject {
+  padding: 7.5rem;
+  background-color: #2b3756;
+}
+
+.MainContainer {
+  background-color: #17213c;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    width: 430px;
+  }
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ButtonContainer {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.ImageWrapper {
+  width: 100%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.Content {
+  color: white;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 590px;
+  }
+}
+
+@media (max-width: 768px) {
+  .StartProject {
+    padding: 3.75rem;
+  }
+  .MainContainer {
+    position: relative;
+    padding: 3.75rem;
+  }
+  .Container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .Content {
+    z-index: 10;
+    p {
+      width: unset;
+    }
+  }
+  .ImageWrapper {
+    width: 250px;
+  }
+}
+
+@media (max-width: 428px) {
+  .StartProject {
+    padding: 2rem;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ButtonContainer {
+    width: 80%;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .MainContainer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    h2 {
+      width: unset;
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .StartProject {
+    padding-top: 2rem;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

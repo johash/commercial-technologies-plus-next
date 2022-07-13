@@ -1,75 +1,138 @@
 .BillableWebPosHeader {
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-color: white;
-    position: relative;
-    padding-left: 120px;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: white;
+  position: relative;
+  padding-left: 120px;
 }
 
 .Container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .TextContainer {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-right: 20rem;
-    margin-top: 15rem;
-    * {
-        margin: 0;
-    }
-    h1 {
-        font-weight: 600;
-        font-size: 56px;
-    }
-    p {
-        font-weight: 400;
-        font-size: 22px;
-        color: #00B3DE;
-    }
-    z-index: 5;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 20rem;
+  margin-top: 15rem;
+  * {
+    margin: 0;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 56px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    color: #00b3de;
+  }
+  z-index: 5;
 }
 
 .LaptopImageContainer {
-    width: 1170px;
-    span {
-      position: unset !important;
-    }
-    .Image {
-      object-fit: contain;
-      width: 100% !important;
-      position: relative !important;
-      height: unset !important;
-    }
+  width: 1170px;
+  span {
+    position: unset !important;
   }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
 
+.BackgroundContainer {
+  width: 1470px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.LaptopImageWrapper {
+  position: absolute;
+  bottom: -200px;
+  z-index: 1;
+}
+
+.BackgroundWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media (max-width: 1536px) {
+  .LaptopImageContainer {
+    width: 950px;
+  }
   .BackgroundContainer {
-    width: 1470px;
-    span {
-      position: unset !important;
-    }
-    .Image {
-      object-fit: contain;
-      width: 100% !important;
-      position: relative !important;
-      height: unset !important;
-    }
+    width: 1070px;
   }
+  .TextContainer {
+    margin-top: 11rem;
+    margin-right: 15rem;
+  }
+}
 
+@media (max-width: 1366px) {
+  .LaptopImageContainer {
+    width: 900px;
+  }
   .LaptopImageWrapper {
-    position: absolute;
-    bottom: -200px;
-    z-index: 1;
+    bottom: -160px;
   }
+  .TextContainer {
+    margin-right: 13rem;
+  }
+}
 
-  .BackgroundWrapper {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
+@media (max-width: 768px) {
+  .LaptopImageContainer {
+    width: 610px;
   }
+  .LaptopImageWrapper {
+    bottom: -100px;
+  }
+  .TextContainer {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .BillableWebPosHeader {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 5rem;
+  }
+  .LaptopImageContainer {
+    width: 375px;
+  }
+  .LaptopImageWrapper {
+    bottom: 0;
+    right: 0;
+  }
+  .TextContainer {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+}

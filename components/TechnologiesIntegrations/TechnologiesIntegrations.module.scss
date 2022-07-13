@@ -82,3 +82,22 @@
     height: unset !important;
   }
 }
+
+.LineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .VerticalLine {
+    transform: rotate(90deg);
+  }
+  .LineContainer {
+    height: 150px;
+  }
+}

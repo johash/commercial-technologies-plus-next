@@ -1,0 +1,68 @@
+.CaseStudiesNavigation {
+  background-color: #2b3756;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.TextContainer {
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  b {
+    font-weight: 600;
+    font-size: 20px;
+    color: #00b3de;
+  }
+}
+
+.Previous {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 310px;
+  background-color: #344268;
+  * {
+    margin: 0;
+    cursor: pointer;
+  }
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+
+.Forward {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 310px;
+  background-color: #344268;
+  * {
+    margin: 0;
+    cursor: pointer;
+  }
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+
+.IconContainer {
+  width: 24px;
+  span {
+    position: unset !important;
+  }
+  .Icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

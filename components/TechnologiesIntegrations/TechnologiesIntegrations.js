@@ -64,13 +64,16 @@ const TechnologiesIntegrations = () => {
             </div>
           </div>
         </div>
-        <div className={classes.VerticalLine}>
-          <Image
-            src={"/assets/line-1.png"}
-            layout="fill"
-            className={classes.Line}
-          />
+        <div className={classes.LineContainer}>
+          <div className={classes.VerticalLine}>
+            <Image
+              src={"/assets/line-1.png"}
+              layout="fill"
+              className={classes.Line}
+            />
+          </div>
         </div>
+
         <div className={classes.ContainerRight}>
           <div className={classes.TitleRight}>
             <h3>Integrations</h3>

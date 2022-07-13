@@ -26,3 +26,11 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+
+@media (max-width: 768px) {
+  .Container {
+    padding-top: 220px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}

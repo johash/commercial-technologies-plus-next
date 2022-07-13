@@ -3,7 +3,8 @@ import BillableWebPosHeader from "../../../components/BillableWebPosHeader/Billa
 import BillableWebPosAbout from "../../../components/BillableWebPosAbout/BillableWebPosAbout";
 import BillableWebPosDevelopment from "../../../components/BillableWebPosDevelopment/BillableWebPosDevelopment";
 import TechnologiesIntegrations from "../../../components/TechnologiesIntegrations/TechnologiesIntegrations";
-import StartProject from "../../../components/StartProject/StartProject";
+import CaseStudiesNavigation from "../../../components/CaseStudiesNavigation/CaseStudiesNavigation";
+import CaseStudiesStartProject from "../../../components/CaseStudiesStartProject/CaseStudiesStartProject";
 
 const BillableWebPosPage = () => {
   return (
@@ -12,7 +13,11 @@ const BillableWebPosPage = () => {
       <BillableWebPosAbout />
       <BillableWebPosDevelopment />
       <TechnologiesIntegrations />
-      <StartProject />
+      <CaseStudiesNavigation
+        nextText="Billable Mobile App"
+        nextPath={"billable-mobile-pos"}
+      />
+      <CaseStudiesStartProject />
     </Layout>
   );
 };

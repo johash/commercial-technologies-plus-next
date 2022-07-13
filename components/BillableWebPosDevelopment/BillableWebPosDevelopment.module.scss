@@ -32,3 +32,26 @@
     height: unset !important;
   }
 }
+
+@media (max-width: 1366px) {
+  .ImageContainer {
+    width: 570px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-top: 3.5rem;
+  }
+  .TextContainer {
+    width: 50%;
+  }
+  .ImageContainer {
+    width: 420px;
+  }
+  .ImageWrapper {
+    right: 60px;
+  }
+}
