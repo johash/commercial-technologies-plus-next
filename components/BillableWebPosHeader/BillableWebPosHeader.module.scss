@@ -141,3 +141,12 @@
     left: -420px;
   }
 }
+
+@media (max-width: 375px) {
+  .LaptopImageContainer {
+    width: 370px;
+  }
+  .BackgroundContainer {
+    width: 810px;
+  }
+}

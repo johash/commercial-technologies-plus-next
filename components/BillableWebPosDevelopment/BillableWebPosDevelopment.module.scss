@@ -69,3 +69,9 @@
     position: initial;
   }
 }
+
+@media (max-width: 375px) {
+  .ImageContainer {
+    width: 360px;
+  }
+}
