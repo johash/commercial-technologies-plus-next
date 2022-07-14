@@ -1,0 +1,138 @@
+.BillableMobilePosHeader {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  padding-left: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.TextContainer {
+  z-index: 5;
+  * {
+    margin: 0;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 56px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    color: #a8d100;
+  }
+}
+
+.ImageContainer {
+  width: 750px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.BackgroundImageContainer {
+  width: 1500px;
+  span {
+    position: unset !important;
+  }
+  .BackgroundImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.ImageWrapper {
+  position: absolute;
+  right: 130px;
+  bottom: -100px;
+  z-index: 1;
+}
+
+.BackgroundImageWrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media (max-width: 1536px) {
+  .ImageContainer {
+    width: 560px;
+  }
+  .BackgroundImageContainer {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .Container {
+    padding-left: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    align-items: flex-start;
+    padding-top: 120px;
+  }
+  .ImageContainer {
+    width: 430px;
+  }
+  .BackgroundImageContainer {
+    width: 750px;
+  }
+}
+
+@media (max-width: 428px) {
+  .Container {
+    padding: 0;
+    padding-top: 5.25rem;
+    text-align: center;
+  }
+  .TextContainer {
+    width: 100%;
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+  .BackgroundImageContainer {
+    width: 380px;
+  }
+  .BackgroundImageWrapper {
+    top: 100px;
+  }
+  .ImageWrapper {
+    right: 0;
+    bottom: -70px;
+  }
+  .ImageContainer {
+    width: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+  .BackgroundImageContainer {
+    width: 360px;
+  }
+  .ImageContainer {
+    width: 370px;
+  }
+}
