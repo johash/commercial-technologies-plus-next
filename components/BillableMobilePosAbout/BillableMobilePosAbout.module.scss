@@ -3,10 +3,43 @@
   color: white;
 }
 
+.Container {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+
+.TextContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    width: 60%;
+  }
+}
+
 .CardContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 0px;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 30px
+}
+
+
+@media (max-width: 768px) {
+  .TextContainer {
+    p {
+      width: 75%;
+    }
+  }
+  
+}
+
+@media (max-width: 428px) {
+  .CardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }

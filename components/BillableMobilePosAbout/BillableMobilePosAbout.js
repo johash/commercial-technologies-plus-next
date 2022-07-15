@@ -16,9 +16,26 @@ const BillableMobilePosAbout = () => {
             integrate this with every aspect of your business.
           </p>
         </div>
-        <div className={classes.CardContainer}>
-          <AboutCard />
-        </div>
+       
+          <div className={classes.CardContainer}>
+            <AboutCard
+              title="Simple Mobile POS"
+              imageUrl="/assets/billable-mobile-pos/1.png"
+            />
+            <AboutCard
+              title="Create Invoices On the Go"
+              imageUrl="/assets/billable-mobile-pos/2.png"
+            />
+            <AboutCard
+              title="Run Your Bosiness from Anywhere"
+              imageUrl="/assets/billable-mobile-pos/3.png"
+            />
+            <AboutCard
+              title="Collect Payments Faster"
+              imageUrl="/assets/billable-mobile-pos/4.png"
+            />
+          </div>
+        
       </div>
     </section>
   );

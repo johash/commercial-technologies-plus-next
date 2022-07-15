@@ -1,19 +1,19 @@
 import Image from "next/image";
 import classes from "./AboutCard.module.scss";
 
-const AboutCard = () => {
+const AboutCard = ({title, imageUrl}) => {
   return (
     <div className={classes.AboutCard}>
       <div className={classes.ImageContainer}>
         <Image
           alt="simple mobile pos"
-          src={"/assets/billable-mobile-pos/1.png"}
+          src={imageUrl}
           layout="fill"
           className={classes.Image}
         />
       </div>
       <div className={classes.Body}>
-        <p>Simple Mobile POS</p>
+        <p>{title}</p>
       </div>
     </div>
   );

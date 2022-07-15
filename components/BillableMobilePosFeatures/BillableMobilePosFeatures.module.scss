@@ -1,0 +1,24 @@
+.BillableMobilePosFeatures {
+  width: 100%;
+  background-color: #579cba;
+  //   height: 745px;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageContainer {
+  width: 60%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
