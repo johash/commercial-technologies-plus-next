@@ -1,0 +1,53 @@
+.DevCard {
+  padding: 35px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 220px;
+}
+
+.Blue {
+  background-color: #5793ce;
+}
+
+.Green {
+  background-color: #a8d100;
+}
+
+.IconContainer {
+  width: 30px;
+  span {
+    position: unset !important;
+  }
+  .Icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.Text {
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  .DevCard {
+    padding: 20px;
+    width: 170px;
+  }
+  .IconContainer {
+    width: 22px;
+  }
+  .Text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 428px) {
+  .DevCard {
+    width: 100%;
+  }
+}

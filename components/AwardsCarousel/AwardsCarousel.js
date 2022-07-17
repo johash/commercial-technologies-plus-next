@@ -17,7 +17,7 @@ const AwardsCarousel = () => {
         }}
         direction="horizontal"
         slidesPerView="auto"
-        spaceBetween={5}
+        spaceBetween={0}
         loop
         breakpoints={{
           320: {
@@ -40,6 +40,7 @@ const AwardsCarousel = () => {
               src="/assets/awards/c1.png"
               layout="fill"
               className={classes.Image}
+              alt="award image1"
             />
           </div>
         </SwiperSlide>
@@ -49,6 +50,7 @@ const AwardsCarousel = () => {
               src="/assets/awards/c2.png"
               layout="fill"
               className={classes.Image}
+              alt="award image2"
             />
           </div>
         </SwiperSlide>
@@ -58,6 +60,7 @@ const AwardsCarousel = () => {
               src="/assets/awards/c3.png"
               layout="fill"
               className={classes.Image}
+              alt="award image3"
             />
           </div>
         </SwiperSlide>
@@ -67,6 +70,7 @@ const AwardsCarousel = () => {
               src="/assets/awards/c4.png"
               layout="fill"
               className={classes.Image}
+              alt="award image4"
             />
           </div>
         </SwiperSlide>
@@ -76,6 +80,7 @@ const AwardsCarousel = () => {
               src="/assets/awards/c5.png"
               layout="fill"
               className={classes.Image}
+              alt="award image5"
             />
           </div>
         </SwiperSlide>
@@ -85,6 +90,7 @@ const AwardsCarousel = () => {
               src="/assets/awards/c6.png"
               layout="fill"
               className={classes.Image}
+              alt="award image6"
             />
           </div>
         </SwiperSlide>
@@ -94,6 +100,7 @@ const AwardsCarousel = () => {
               src="/assets/awards/c7.png"
               layout="fill"
               className={classes.Image}
+              alt="award image7"
             />
           </div>
         </SwiperSlide>

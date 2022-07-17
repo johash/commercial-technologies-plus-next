@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
       <div className={classes.NavigationLinks}>
         <div className={classes.NavLeft}>
-          <Link href="/about-us">Company</Link>
+          <Link href="/about-commercializers">Company</Link>
           <Link href="/services">Services</Link>
           <Link href="/case-studies">Case Studies</Link>
           <Link href="/awards">Awards</Link>

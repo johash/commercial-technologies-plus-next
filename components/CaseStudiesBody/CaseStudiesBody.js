@@ -65,6 +65,9 @@ const CaseStudiesBody = () => {
               <CaseStudyCard
                 title="Billable Simple Invoice"
                 imageUrl={"/assets/case-studies/7.png"}
+                onClick={() => {
+                  Router.push("/case-studies/billable-simple-invoice");
+                }}
               />
             </div>
             <div className={classes.CommercialPrime}>

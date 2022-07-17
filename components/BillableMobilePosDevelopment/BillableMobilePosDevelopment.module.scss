@@ -1,0 +1,123 @@
+.BillableMobilePosDevelopment {
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.Container {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+}
+
+.ImageContainer {
+  order: 1;
+  width: 350px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.TextContainer {
+  order: 2;
+  width: 50%;
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+.CardContainer {
+  order: 3;
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+.Bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 3.75rem;
+    padding-bottom: 150px;
+    gap: 80px;
+  }
+  .TextContainer {
+    width: 75%;
+  }
+}
+
+@media (max-width: 428px) {
+  .BillableMobilePosDevelopment {
+    position: initial;
+  }
+  .Container {
+    gap: 18px;
+    position: relative;
+  }
+  .ImageContainer {
+    order: 2;
+    width: 256px;
+    margin-bottom: 90%;
+  }
+  .TextContainer {
+    order: 1;
+    width: 100%;
+    h2 {
+      font-weight: 600;
+      font-size: 29.8502px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15.9201px;
+    }
+  }
+  .CardContainer {
+    position: absolute;
+    background-color: #2b3756;
+    bottom: 0;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 5rem;
+  }
+  .Top {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+  }
+  .Bottom {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+  }
+}

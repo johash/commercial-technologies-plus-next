@@ -1,0 +1,43 @@
+.BillableMobilePosAbout {
+  background-color: #2b3756;
+  color: white;
+}
+
+.Container {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+
+.TextContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    width: 60%;
+  }
+}
+
+.CardContainer {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .TextContainer {
+    p {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .CardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
