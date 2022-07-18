@@ -1,20 +1,20 @@
-import classes from "./BillableWebPosHeader.module.scss";
 import Image from "next/image";
+import classes from "./BillableEcommerceHeader.module.scss";
 
-const BillableWebPosHeader = () => {
+const BillableEcommerceHeader = () => {
   return (
-    <section className={classes.BillableWebPosHeader}>
+    <section className={classes.BillableEcommerceHeader}>
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
-          <h1>Billable Web POS</h1>
-          <p>A feature rich cloud based WebPOS</p>
+          <h1>Billable eCommerce Platform</h1>
+          <p>An Elegant Storefront</p>
         </div>
       </div>
       <div className={classes.LaptopImageWrapper}>
         <div className={classes.LaptopImageContainer}>
           <Image
             alt="web pos laptop"
-            src="/assets/web-pos-laptop.png"
+            src="/assets/billable-ecommerce-platform.png"
             layout="fill"
             className={classes.Image}
           />
@@ -24,7 +24,7 @@ const BillableWebPosHeader = () => {
         <div className={classes.BackgroundContainer}>
           <Image
             alt="web pos background"
-            src="/assets/billable-web-pos-background.png"
+            src="/assets/billable-ecommerce-platform-background.png"
             layout="fill"
             className={classes.Image}
           />
@@ -34,4 +34,4 @@ const BillableWebPosHeader = () => {
   );
 };
 
-export default BillableWebPosHeader;
+export default BillableEcommerceHeader;

@@ -1,0 +1,54 @@
+.AboutCard {
+  background-color: #0e6185;
+  width: 310px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  gap: 1rem;
+  box-shadow: 0px 4px 8px rgba(14, 97, 133, 0.47);
+}
+
+.AboutCardLight {
+  background-color: #168eb4;
+  width: 310px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  gap: 1rem;
+  box-shadow: 0px 4px 8px rgba(14, 97, 133, 0.47);
+}
+
+.ImageContainer {
+  width: 35px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.Body {
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+  }
+
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .Body {
+    p {
+      font-size: 12px;
+    }
+  }
+}

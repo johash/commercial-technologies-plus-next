@@ -1,0 +1,162 @@
+.BillableEcommerceHeader {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: black;
+  position: relative;
+  padding-left: 120px;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.TextContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 15rem;
+  margin-top: 15rem;
+  * {
+    margin: 0;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 56px;
+    color: white;
+    width: 75%;
+  }
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    color: #a8d100;
+  }
+  z-index: 5;
+}
+
+.LaptopImageContainer {
+  width: 800px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.BackgroundContainer {
+  width: 1470px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.LaptopImageWrapper {
+  position: absolute;
+  bottom: -100px;
+  z-index: 1;
+}
+
+.BackgroundWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media (max-width: 1536px) {
+  .LaptopImageContainer {
+    width: 610px;
+  }
+  .BackgroundContainer {
+    width: 1070px;
+  }
+  .TextContainer {
+    margin-top: 11rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .LaptopImageContainer {
+    width: 510px;
+  }
+  .LaptopImageWrapper {
+    bottom: -80px;
+  }
+  .TextContainer {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .LaptopImageContainer {
+    width: 425px;
+  }
+  .LaptopImageWrapper {
+    bottom: -65px;
+  }
+  .TextContainer {
+    margin-top: 6rem;
+    h1 {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .BillableEcommerceHeader {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 5rem;
+  }
+  .LaptopImageContainer {
+    width: 330px;
+  }
+  .LaptopImageWrapper {
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .TextContainer {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+  .BackgroundWrapper {
+    top: 40px;
+  }
+  .BackgroundContainer {
+    width: 810px;
+  }
+}
+
+@media (max-width: 375px) {
+  .LaptopImageContainer {
+    width: 370px;
+  }
+  .BackgroundContainer {
+    width: 810px;
+  }
+}

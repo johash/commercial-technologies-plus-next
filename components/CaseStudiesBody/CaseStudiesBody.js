@@ -28,6 +28,9 @@ const CaseStudiesBody = () => {
               <CaseStudyCard
                 title="Billable eCommerce"
                 imageUrl={"/assets/case-studies/2.png"}
+                onClick={() => {
+                  Router.push("/case-studies/billable-ecommerce-platform");
+                }}
               />
             </div>
             <div className={classes.CalendQ}>

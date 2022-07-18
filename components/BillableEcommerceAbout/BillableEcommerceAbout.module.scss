@@ -1,0 +1,39 @@
+.BillableEcommerceAbout {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.Container {
+  padding-left: 225px;
+  padding-right: 225px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 145px;
+}
+
+.TextContainer {
+  width: 50%;
+}
+
+.CardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 20%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .TextContainer {
+    width: 100%;
+  }
+}
