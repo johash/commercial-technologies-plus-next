@@ -1,0 +1,64 @@
+.AboutCard {
+  width: 250px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.ImageWrapper {
+  background: linear-gradient(
+    134.15deg,
+    #6bc6bb 17.72%,
+    #3f70b6 104.07%,
+    #6a62ab 128.84%,
+    #ee4761 195.9%,
+    #eb108b 236.89%
+  );
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.ImageContainer {
+  width: 50px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutCard {
+    width: 140px;
+    height: 260px;
+    text-align: center;
+  }
+  .ImageContainer {
+    width: 45px;
+  }
+  .Body {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .AboutCard {
+    height: 225px;
+    width: 60%;
+  }
+}

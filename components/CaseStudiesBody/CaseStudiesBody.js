@@ -37,6 +37,9 @@ const CaseStudiesBody = () => {
               <CaseStudyCard
                 title="CalendQ"
                 imageUrl={"/assets/case-studies/3.png"}
+                onClick={() => {
+                  Router.push("/case-studies/calendQ");
+                }}
               />
             </div>
           </div>
