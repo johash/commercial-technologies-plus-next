@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CalendQView = () => {
   return (
-    <section>
+    <section className={classes.CalendQView}>
       <div className={classes.Container}>
         <div className={classes.ImageContainer}>
           <Image
