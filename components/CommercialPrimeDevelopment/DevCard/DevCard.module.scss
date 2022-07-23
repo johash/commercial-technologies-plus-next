@@ -1,0 +1,55 @@
+.DevCard {
+  padding: 35px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 220px;
+  border: 1px solid #504b41;
+  border-radius: 6px;
+}
+
+.Blue {
+  background: linear-gradient(120.87deg, #4f493c 0%, #282828 95.99%), #a8d100;
+}
+
+.Green {
+  background: linear-gradient(120.87deg, #4f493c 0%, #282828 95.99%), #a8d100;
+}
+
+.IconContainer {
+  width: 30px;
+  span {
+    position: unset !important;
+  }
+  .Icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.Text {
+  color: #dbb659;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  .DevCard {
+    padding: 20px;
+    width: 170px;
+  }
+  .IconContainer {
+    width: 22px;
+  }
+  .Text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 428px) {
+  .DevCard {
+    width: 100%;
+  }
+}

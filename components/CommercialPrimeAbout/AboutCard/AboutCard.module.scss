@@ -1,0 +1,56 @@
+.AboutCard {
+  background: linear-gradient(120.87deg, #4f493c 0%, #282828 95.99%);
+  width: 250px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #3a3a3a;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.ImageContainer {
+  width: 50px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.Body {
+  p {
+    color: #dbb659;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutCard {
+    width: 140px;
+    height: 172px;
+    text-align: center;
+  }
+  .ImageContainer {
+    width: 65px;
+  }
+  .Body {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .AboutCard {
+    width: 90%;
+  }
+}

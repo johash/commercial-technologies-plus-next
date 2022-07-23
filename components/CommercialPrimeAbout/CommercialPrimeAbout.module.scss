@@ -1,0 +1,57 @@
+.CommercialPrimeAbout {
+  background-color: #f8f8f8;
+  color: black;
+}
+
+.Container {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+
+.TextContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    width: 60%;
+  }
+}
+
+.CardContainer {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 25%;
+}
+
+@media (max-width: 1536px) {
+  .CardContainer {
+    padding: 0 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .CardContainer {
+    padding: 0 10%;
+  }
+  .TextContainer {
+    p {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .CardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .Container {
+    padding-top: 130px;
+  }
+}

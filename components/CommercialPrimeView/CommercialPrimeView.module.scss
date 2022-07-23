@@ -1,0 +1,22 @@
+.CommercialPrimeView {
+  overflow-x: hidden;
+}
+
+.ImageContainer {
+  width: 100%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 428px) {
+  .ImageContainer {
+    width: 200%;
+  }
+}
