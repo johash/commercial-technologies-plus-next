@@ -10,13 +10,14 @@ import Router from "next/router";
 import Lottie from "react-lottie";
 import SentAnimation from "../../public/assets/animation/email_sent.json";
 
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const ContactUsForm = () => {
   const [selectedBudget, setSelectedBudget] = useState(2);
-  const [phoneNumber, setPhoneNumber] = useState();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [company, setCompany] = useState("");
   const [reasons, setReasons] = useState([]);
   const [build, setBuild] = useState([]);
   const [viewModal, setViewModal] = useState(false);
@@ -81,18 +82,35 @@ const ContactUsForm = () => {
     setViewModal(false);
     setSelectedBudget(2);
     setBuild([]);
-    setName("");
-    setEmail("");
-    setPhoneNumber("");
-    setCompany("");
     setReasons([]);
     setMessage("");
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setViewModal(true);
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      contact: "",
+      company: "",
+    },
+    validationSchema: Yup.object({
+      name: Yup.string().required("Your name is required"),
+      email: Yup.string().required("Your email address is required"),
+      contact: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
+    }),
+    onSubmit: (data) => {
+      sendEmail(data);
+    },
+  });
+
+  const notify = () => toast.error("Form fields cannot be empty!");
+
+  const sendEmail = (data) => {
+    console.log("Send Email...");
+
     let budget = 0;
     switch (selectedBudget) {
       case 0:
@@ -115,15 +133,25 @@ const ContactUsForm = () => {
     }
 
     const formData = {
-      name,
-      email,
+      name: data.name,
+      email: data.email,
       message,
-      contact: phoneNumber,
-      company,
+      contact: data.contact,
+      company: data.company,
       budget,
       lookingFor: reasons.join(", "),
       toBuild: build.join(", "),
     };
+
+    if (reasons.length <= 0) {
+      return notify();
+    }
+    if (build.length <= 0) {
+      return notify();
+    }
+
+    setLoading(true);
+    setViewModal(true);
 
     emailjs
       .send(
@@ -142,7 +170,7 @@ const ContactUsForm = () => {
           }
         },
         (error) => {
-          // console.log(error.text);
+          console.log(error.text);
         }
       );
   };
@@ -153,31 +181,47 @@ const ContactUsForm = () => {
         <h1>Lets get Connected</h1>
         <p>Please fill out the below details to get in touch with us</p>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={formik.handleSubmit}>
         <div className={classes.FormTop}>
           <input
             type="text"
             name="name"
             placeholder="Your name"
-            className={classes.Input}
-            value={name}
-            onChange={onNameChange}
+            className={
+              formik.touched.name && formik.errors.name
+                ? [classes.Input, classes.InputError].join(" ")
+                : classes.Input
+            }
+            value={formik.values.name}
+            onChange={formik.handleChange}
           />
+
           <input
             type="email"
             name="email"
             placeholder="Email address"
-            className={classes.Input}
-            value={email}
-            onChange={onEmailChange}
+            className={
+              formik.touched.email && formik.errors.email
+                ? [classes.Input, classes.InputError].join(" ")
+                : classes.Input
+            }
+            value={formik.values.email}
+            onChange={formik.handleChange}
           />
           <PhoneInput
             name="contact"
             placeholder="Enter phone number"
-            value={phoneNumber}
-            onChange={onPhoneNumberInputChange}
+            value={formik.values.contact}
+            onChange={formik.handleChange}
             defaultCountry="US"
-            className={classes.PhoneNumberInput}
+            className={
+              formik.touched.contact && formik.errors.contact
+                ? [
+                    classes.PhoneNumberInput,
+                    classes.PhoneNumberInputError,
+                  ].join(" ")
+                : classes.PhoneNumberInput
+            }
             inputComponent={"input"}
             international
           />
@@ -185,9 +229,13 @@ const ContactUsForm = () => {
             type="text"
             placeholder="Company"
             name="company"
-            value={company}
-            className={classes.Input}
-            onChange={onCompanyInputChange}
+            value={formik.values.company}
+            className={
+              formik.touched.email && formik.errors.email
+                ? [classes.Input, classes.InputError].join(" ")
+                : classes.Input
+            }
+            onChange={formik.handleChange}
           />
         </div>
         <div className={classes.MessageInputContainer}>
@@ -423,6 +471,17 @@ const ContactUsForm = () => {
           </div>
         </Modal.Footer>
       </Modal>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 };

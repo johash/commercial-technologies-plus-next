@@ -45,6 +45,10 @@
   font-size: 16px;
 }
 
+.InputError {
+  border: 1px solid #c95353 !important;
+}
+
 .PhoneNumberInput {
   border: 1px solid #cedbe2;
   border-radius: 6px;
@@ -55,6 +59,10 @@
   * {
     border: none;
   }
+}
+
+.PhoneNumberInputError {
+  border: 1px solid #c95353 !important;
 }
 
 .MessageInputContainer {

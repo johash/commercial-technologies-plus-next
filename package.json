@@ -15,6 +15,7 @@
     "@mantine/next": "^4.2.6",
     "@nextui-org/react": "^1.0.0-beta.7",
     "cross-env": "^7.0.3",
+    "formik": "^2.2.9",
     "framer-motion": "^6.3.16",
     "next": "12.1.6",
     "react": "18.1.0",
@@ -23,8 +24,10 @@
     "react-icons": "^4.4.0",
     "react-lottie": "^1.2.3",
     "react-phone-number-input": "^3.2.2",
+    "react-toastify": "^9.0.7",
     "sass": "^1.51.0",
-    "swiper": "^8.2.5"
+    "swiper": "^8.2.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "eslint": "8.14.0",
