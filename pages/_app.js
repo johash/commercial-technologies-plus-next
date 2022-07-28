@@ -1,9 +1,22 @@
 import "../styles/globals.css";
 import { NextUIProvider } from "@nextui-org/react/";
 import Head from "next/head";
-import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import * as ga from "../lib/analytics";
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
   return (
     <>
       <Head>
