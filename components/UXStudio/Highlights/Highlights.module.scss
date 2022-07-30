@@ -1,0 +1,26 @@
+.Highlights {
+  background: url("/assets/highlights-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 870px;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.TextContainer {
+  p {
+    font-weight: 500;
+    font-size: 36px;
+    color: white;
+    text-shadow: 0px 2px 4px #9b6bcd;
+  }
+}

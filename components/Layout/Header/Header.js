@@ -14,6 +14,7 @@ const Header = (props) => {
               src="/assets/logo.png"
               layout="fill"
               className={classes.LogoImage}
+              alt="commercial technologies plus logo"
             />
           </div>
         </Link>

@@ -1,0 +1,97 @@
+.Jumbotron {
+  background: linear-gradient(103.93deg, #262626 0%, #1b1b1b 100.98%);
+  width: 100%;
+  height: calc(100vh - 110px);
+  position: relative;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TextContainer {
+  margin-top: 10%;
+  text-align: center;
+  h1 {
+    font-weight: 500;
+    font-size: 100px;
+    color: white;
+  }
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    color: #ababab;
+  }
+}
+
+.ButtonContainer {
+  margin-top: 50px;
+}
+
+.ActionButton {
+  background: linear-gradient(90deg, #9555e1 -2.79%, #cb78e6 100%);
+  box-shadow: 0px 4px 10px rgba(182, 106, 228, 0.2);
+  border-radius: 8px;
+  padding: 20px 36px;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.PhoneLeftWrapper {
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+}
+
+.PhoneRightWrapper {
+  position: absolute;
+  right: 0;
+  bottom: -35%;
+}
+
+.PhoneLeftContainer {
+  width: 600px;
+  span {
+    position: unset !important;
+  }
+  .PhoneLeft {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.PhoneRightContainer {
+  width: 500px;
+  span {
+    position: unset !important;
+  }
+  .PhoneRight {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 1536px) {
+  .PhoneLeftContainer {
+    width: 450px;
+  }
+  .PhoneRightContainer {
+    width: 380px;
+  }
+  .TextContainer {
+    h1 {
+      font-size: 70px;
+    }
+  }
+}
