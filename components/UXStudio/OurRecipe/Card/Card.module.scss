@@ -1,0 +1,26 @@
+.Card {
+  max-width: 260px;
+  span {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #828282;
+  }
+}
+
+.ImageContainer {
+  width: 84px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

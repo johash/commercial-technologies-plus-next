@@ -1,0 +1,93 @@
+.DesignForBusiness {
+  padding-top: 200px;
+  position: relative;
+}
+
+.Container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.OurProcessSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 800px;
+}
+
+.TextContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  b {
+    color: #9555e1;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 56px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 24px;
+    color: #868686;
+    width: 50%;
+  }
+}
+
+.ProcessImageContainer {
+  width: 940px;
+  span {
+    position: unset !important;
+  }
+  .ProcessImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.AnyDeviceSection {
+  padding-top: 200px;
+}
+
+.DeviceImageWrapper {
+  position: absolute;
+  bottom: 0;
+}
+
+.TextContent {
+  position: absolute;
+  bottom: 400px;
+  width: 15%;
+  h2 {
+    font-weight: 500;
+    font-size: 56px;
+    span {
+      color: #c18bea;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #868686;
+  }
+}
+
+.DeviceImageContainer {
+  width: 1300px;
+  span {
+    position: unset !important;
+  }
+  .DeviceImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

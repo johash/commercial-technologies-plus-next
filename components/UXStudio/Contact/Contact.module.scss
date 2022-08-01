@@ -1,0 +1,55 @@
+.Contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+}
+
+.Container {
+  background-color: #1d1d1d;
+  padding: 82px 72px;
+  width: 100%;
+  height: 340px;
+  position: relative;
+}
+
+.TextAndButton {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  p {
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+  }
+  button {
+    width: fit-content;
+    background: #4a4a4a;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 16px 28px;
+  }
+}
+
+.ImageWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.ImageContainer {
+  width: 606px;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

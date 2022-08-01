@@ -1,0 +1,49 @@
+.Portfolio {
+  background: url("/assets/ux-studio/background-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: fit-content;
+}
+
+.Container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.TextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  b {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 56px;
+  }
+}
+
+.PortfolioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 130px;
+}
+
+.ImageContainer {
+  width: 80%;
+  span {
+    position: unset !important;
+  }
+  .Image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
