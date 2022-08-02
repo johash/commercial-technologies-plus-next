@@ -8,8 +8,8 @@ const FAQ = () => {
     <section className={classes.FAQ}>
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
-          <b>PORTFOLIO</b>
-          <h2>Some cases we are proud of</h2>
+          <b>FAQ</b>
+          <h2>Things we hear often</h2>
         </div>
         <div className={classes.CollapseArea}>
           <Collapse.Group>

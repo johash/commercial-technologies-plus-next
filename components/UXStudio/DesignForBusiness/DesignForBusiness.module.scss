@@ -91,3 +91,65 @@
     height: unset !important;
   }
 }
+
+@media (max-width: 768px) {
+  .DeviceImageContainer {
+    width: 610px;
+  }
+  .ProcessImageContainer {
+    width: 550px;
+  }
+  .TextContent {
+    width: 80%;
+  }
+  .OurProcessSection {
+    margin-bottom: 500px;
+  }
+}
+
+@media (max-width: 428px) {
+  .DeviceImageContainer {
+    width: 370px;
+  }
+  .ProcessImageContainer {
+    width: 340px;
+  }
+  .TextContainer {
+    p {
+      width: 90%;
+    }
+  }
+  .TextContent {
+    position: initial;
+    width: 100%;
+    text-align: center;
+    h2 {
+      font-size: 44px;
+    }
+  }
+  .DeviceImageWrapper {
+    position: initial;
+  }
+  .OurProcessSection {
+    margin-bottom: 50px;
+  }
+  .AnyDeviceSection {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 375px) {
+  .DeviceImageContainer {
+    width: 300px;
+  }
+  .TextContainer {
+    p {
+      font-size: 16px;
+    }
+  }
+  .TextContent {
+    p {
+      font-size: 16px;
+    }
+  }
+}

@@ -8,8 +8,8 @@ const Pricing = () => {
     <section className={classes.Pricing}>
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
-          <b>PORTFOLIO</b>
-          <h2>Some cases we are proud of</h2>
+          <b>PRICING</b>
+          <h2>Simple, transparent pricing</h2>
         </div>
         <div className={classes.PriceCardContainer}>
           <div className={classes.Card}>

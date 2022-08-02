@@ -39,3 +39,15 @@
     height: unset !important;
   }
 }
+
+@media (max-width: 768px) {
+  .LogoContainer {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 428px) {
+  .TrustedBy {
+    display: none;
+  }
+}

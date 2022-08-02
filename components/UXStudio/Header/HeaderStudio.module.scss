@@ -94,10 +94,24 @@
   }
 }
 
+.ContactButton {
+  background: #343434;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 8px 16px;
+}
+
 @media (max-width: 768px) {
   .HeaderStudio {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
+  }
+  .NavLinks {
+    display: none;
   }
 }
 
@@ -111,5 +125,14 @@
   }
   .LogoContainer {
     width: 170px;
+  }
+  .ButtonContainer {
+    background: transparent;
+  }
+  .LogoContainer {
+    width: 140px;
+  }
+  .UXStudio {
+    font-size: 10px;
   }
 }

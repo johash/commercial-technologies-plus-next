@@ -35,3 +35,21 @@
   grid-column-gap: 140px;
   grid-row-gap: 100px;
 }
+
+@media (max-width: 768px) {
+  .RecipeCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+  }
+}
+
+@media (max-width: 428px) {
+  .RecipeCardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .TextContainer {
+    h2 {
+      font-size: 44px;
+    }
+  }
+}

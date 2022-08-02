@@ -2,7 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "./HeaderStudio.module.scss";
 
+import { useWindowSize } from "../../../hooks/useWindowSize";
+
 const HeaderStudio = () => {
+  const windowSize = useWindowSize();
+  console.log(windowSize);
   return (
     <header className={classes.HeaderStudio}>
       <div className={classes.Logo}>
@@ -44,9 +48,13 @@ const HeaderStudio = () => {
           </ul>
         </div>
         <div className={classes.ButtonContainer}>
-          <button className={classes.CallToActionButton}>
-            Get a FREE UX Review
-          </button>
+          {windowSize.width > 428 ? (
+            <button className={classes.CallToActionButton}>
+              Get a FREE UX Review
+            </button>
+          ) : (
+            <button className={classes.ContactButton}>Contact</button>
+          )}
         </div>
       </div>
     </header>

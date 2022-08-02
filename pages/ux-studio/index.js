@@ -9,11 +9,16 @@ import Pricing from "../../components/UXStudio/Pricing/Pricing";
 import FAQ from "../../components/UXStudio/FAQ/FAQ";
 import Contact from "../../components/UXStudio/Contact/Contact";
 import Footer from "../../components/Layout/Footer/Footer";
+import MobileMenu from "../../components/UXStudio/Header/MobileMenu/MobileMenu";
+import { useWindowSize } from "../../hooks/useWindowSize";
+import classes from "./index.module.scss";
 
 const UXStudioPage = () => {
+  const windowSize = useWindowSize();
   return (
-    <main>
+    <main className={classes.UXStudioPage}>
       <HeaderStudio />
+      {windowSize.width <= 428 ? <MobileMenu /> : null}
       <Jumbotron />
       <Highlights />
       <TrustedBy />

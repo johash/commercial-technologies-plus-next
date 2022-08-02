@@ -47,3 +47,25 @@
     height: unset !important;
   }
 }
+
+@media (max-width: 428px) {
+  .TextContainer {
+    text-align: center;
+    h2 {
+      font-size: 44px;
+    }
+  }
+  .Container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .ImageContainer {
+    width: 100%;
+    height: 500px;
+    .Image {
+      object-fit: cover !important;
+      height: 500px !important;
+      object-position: left;
+    }
+  }
+}

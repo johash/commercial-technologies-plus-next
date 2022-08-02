@@ -1,0 +1,28 @@
+.MobileMenu {
+  background-color: #2b2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container {
+  padding: 10px 0;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 0;
+
+    li {
+      margin: 0;
+      color: white;
+      opacity: 0.5;
+      font-weight: 400;
+      font-size: 12px;
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+}

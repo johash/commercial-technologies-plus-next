@@ -54,3 +54,46 @@
     height: unset !important;
   }
 }
+
+@media (max-width: 768px) {
+  .Contact {
+    padding: 60px;
+  }
+  .ImageWrapper {
+    position: initial;
+    margin-top: 50px;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+  .ImageContainer {
+    width: 576px;
+  }
+  .TextAndButton {
+    p {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .Contact {
+    padding: 1.5rem;
+  }
+  .ImageContainer {
+    width: 287px;
+  }
+  .TextAndButton {
+    p {
+      width: 100%;
+    }
+  }
+  .Container {
+    padding: 50px 40px;
+    padding-bottom: 0;
+  }
+}
