@@ -7,11 +7,11 @@ const CaseStudiesHeader = () => {
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
           <h1>
-            Let Our Case Studies Speak, <span>Get Experienced!</span>
+            Let the actions speak for itself <span>Get Experienced!</span>
           </h1>
           <p>
             Explore our case studies across multiple tech markets and
-            industries. Get inspired by the results we deliver to our clients.
+            industries. Check out our success stories!
           </p>
           <div className={classes.ButtonContainer}>
             <button className={[classes.Btn, classes.BtnTrans].join(" ")}>

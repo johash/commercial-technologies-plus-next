@@ -6,12 +6,12 @@ const StartProject = () => {
   return (
     <div className={classes.StartProject}>
       <div className={classes.MainContainer}>
-        <h2>Let's get started your project with us</h2>
+        <h2>Kickstart your project with us</h2>
         <div className={classes.Container}>
           <div className={classes.Content}>
             <p>
-              Whatever the project you need to get started with Commercializers
-              will be started with an engagement call.
+              Your project is just one call away with commercializers. Get
+              started with an engagement call.
             </p>
             <p>
               We love maintaining usability and hassle-free client experience in

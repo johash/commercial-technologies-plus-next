@@ -92,6 +92,12 @@
   }
 }
 
+@media (max-width: 1536px) {
+  .ProcessImageContainer {
+    width: 660px;
+  }
+}
+
 @media (max-width: 768px) {
   .DeviceImageContainer {
     width: 610px;

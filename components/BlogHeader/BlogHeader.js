@@ -8,9 +8,8 @@ const BlogHeader = () => {
         <div className={classes.TextContainer}>
           <h1>Modern Solutions For Modern Problems</h1>
           <p>
-            We’re a tech startup company founded in 2016 in a beautiful country
-            of Asia. We were known as the Smart Mobility Enterprise Solutions
-            Provider.{" "}
+            Are you aware of the latest trends in the industry? Check out our
+            blog! For all the latest and greatest information you need to know
           </p>
         </div>
         <div className={classes.ImageWrapper}>

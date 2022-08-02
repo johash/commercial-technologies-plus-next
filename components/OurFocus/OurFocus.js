@@ -16,7 +16,7 @@ const OurFocus = () => {
           setSelectedCardId={setSelectedCardId}
           icon="/assets/icons/1.png"
           heading="Solid Core with Scalability"
-          description="Every product has a visionary plan to drive ahead. We don’t let your product’s journey be a deadend. Start with a MVP, drive your platform towards an unicorn with confidence. We build scalable platforms with the right technologies."
+          description="Every product has a visionary plan to drive ahead. Never let your product’s journey be a dead end.We build  scalable platforms with the right technologies.Start with a MVP, drive your platform towards a unicorn with confidence."
         />
         <FocusCard
           id="2"
@@ -41,7 +41,7 @@ const OurFocus = () => {
           setSelectedCardId={setSelectedCardId}
           icon="/assets/icons/4.png"
           heading="Seamless User Experience"
-          description="Users love great apps without any force. It’s not all about catchy user interfaces, we build engaging and seamless storytelling experiences through the user journey. Get engineered by our UI/UX Commercializers."
+          description="Users love great apps without any force. It's not only our catchy user interfaces, we have commercializers who can build engaging and seamless storytelling experiences through the user journey.Get engineered by UI/UX Commercializers."
         />
         <FocusCard
           id="5"

@@ -9,10 +9,11 @@ const AboutUsHeader = () => {
         <div className={classes.TextContent}>
           <h1>Great things starts with a great team</h1>
           <p>
-            Commercial Technologies Plus is a team of self-driven, experienced,
-            and enthusiastic people that boosts your company's capabilities to
-            gain a competitive edge meanwhile achieving the company vision and
-            mission.
+            Commercial Technologies Plus is a team of self-driven, experienced
+            and enthusiastic people that boost the company’s capabilities to
+            gain a competitive edge while achieving the company vision and
+            mission. We strive to deliver an ideal product market fit by
+            guaranteeing an optimum value for your investment.
           </p>
           <div className={classes.InfoCardContainer}>
             <InfoCard heading="Since" value="2016" />

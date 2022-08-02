@@ -74,8 +74,8 @@ const Commercialize = () => {
             </div>
             <div>
               <p className={classes.Desc}>
-                Commercialize your idea in action. Let&apos;s get on the market
-                quickly
+                We build scalable enterprise grade applications. Grow and get
+                commercialized
               </p>
             </div>
           </motion.div>
@@ -103,8 +103,7 @@ const Commercialize = () => {
             </div>
             <div>
               <p className={classes.Desc}>
-                Commercialize your idea in action. Let&apos;s get on the market
-                quickly
+                Invest on a SaaS platform and reach an exponential growth in ROI
               </p>
             </div>
           </motion.div>
