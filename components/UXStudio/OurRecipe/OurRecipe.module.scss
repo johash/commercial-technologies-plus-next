@@ -36,6 +36,12 @@
   grid-row-gap: 100px;
 }
 
+@media (max-width: 1536px) {
+  .RecipeCardContainer {
+    grid-row-gap: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .RecipeCardContainer {
     grid-template-columns: repeat(2, 1fr);

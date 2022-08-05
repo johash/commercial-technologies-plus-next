@@ -48,6 +48,12 @@
   }
 }
 
+@media (max-width: 1536px) {
+  .ImageContainer {
+    width: 70%;
+  }
+}
+
 @media (max-width: 428px) {
   .TextContainer {
     text-align: center;

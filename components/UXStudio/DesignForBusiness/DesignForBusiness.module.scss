@@ -96,6 +96,20 @@
   .ProcessImageContainer {
     width: 660px;
   }
+  .DeviceImageContainer {
+    width: 870px;
+  }
+  .DeviceImageWrapper {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .TextContent {
+    bottom: 270px;
+    width: 20%;
+  }
+  .OurProcessSection {
+    margin-bottom: 610px;
+  }
 }
 
 @media (max-width: 768px) {
