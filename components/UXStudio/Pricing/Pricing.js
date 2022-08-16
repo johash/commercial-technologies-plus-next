@@ -1,11 +1,12 @@
 import React from "react";
+import Router from "next/router";
 import classes from "./Pricing.module.scss";
 import { BiCheck, BiX } from "react-icons/bi";
 import { TiFlashOutline } from "react-icons/ti";
 
-const Pricing = () => {
+const Pricing = ({ refProp }) => {
   return (
-    <section className={classes.Pricing}>
+    <section className={classes.Pricing} ref={refProp}>
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
           <b>PRICING</b>
@@ -48,7 +49,14 @@ const Pricing = () => {
               </p>
             </div>
             <div className={classes.Footer}>
-              <button className={classes.BtnOutline}>Choose Plan</button>
+              <button
+                className={classes.BtnOutline}
+                onClick={() => {
+                  Router.push("/contact-us");
+                }}
+              >
+                Choose Plan
+              </button>
             </div>
           </div>
           <div className={classes.Card}>
@@ -85,7 +93,14 @@ const Pricing = () => {
               </p>
             </div>
             <div className={classes.Footer}>
-              <button className={classes.BtnColored}>Choose Plan</button>
+              <button
+                className={classes.BtnColored}
+                onClick={() => {
+                  Router.push("/contact-us");
+                }}
+              >
+                Choose Plan
+              </button>
             </div>
           </div>
           <div className={classes.Card}>
@@ -124,7 +139,14 @@ const Pricing = () => {
               </p>
             </div>
             <div className={classes.Footer}>
-              <button className={classes.BtnOutline}>Choose Plan</button>
+              <button
+                className={classes.BtnOutline}
+                onClick={() => {
+                  Router.push("/contact-us");
+                }}
+              >
+                Choose Plan
+              </button>
             </div>
           </div>
         </div>
@@ -139,7 +161,13 @@ const Pricing = () => {
                 </span>
               </p>
             </div>
-            <button>Contact Now</button>
+            <button
+              onClick={() => {
+                Router.push("/contact-us");
+              }}
+            >
+              Contact Now
+            </button>
           </div>
         </div>
       </div>

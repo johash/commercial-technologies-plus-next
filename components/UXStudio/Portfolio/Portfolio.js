@@ -2,9 +2,9 @@ import React from "react";
 import classes from "./Portfolio.module.scss";
 import Image from "next/image";
 
-const Portfolio = () => {
+const Portfolio = ({ refProp }) => {
   return (
-    <section className={classes.Portfolio}>
+    <section className={classes.Portfolio} ref={refProp}>
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
           <b>PORTFOLIO</b>

@@ -1,5 +1,6 @@
 import classes from "./Jumbotron.module.scss";
 import Image from "next/image";
+import Router from "next/router";
 
 const Jumbotron = () => {
   return (

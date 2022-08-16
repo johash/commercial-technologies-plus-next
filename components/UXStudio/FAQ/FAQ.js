@@ -3,9 +3,9 @@ import classes from "./FAQ.module.scss";
 import { Collapse } from "@nextui-org/react";
 import { BiLeftArrowAlt } from "react-icons/bi";
 
-const FAQ = () => {
+const FAQ = ({ refProp }) => {
   return (
-    <section className={classes.FAQ}>
+    <section className={classes.FAQ} ref={refProp}>
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
           <b>FAQ</b>

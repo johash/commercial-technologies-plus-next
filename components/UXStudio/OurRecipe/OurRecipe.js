@@ -2,9 +2,9 @@ import React from "react";
 import classes from "./OurRecipe.module.scss";
 import Card from "./Card/Card";
 
-const OurRecipe = () => {
+const OurRecipe = ({ refProp }) => {
   return (
-    <section className={classes.OurRecipe}>
+    <section className={classes.OurRecipe} ref={refProp}>
       <div className={classes.Container}>
         <div className={classes.TextContainer}>
           <b>WHY US</b>

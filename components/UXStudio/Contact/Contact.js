@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Contact.module.scss";
 import Image from "next/image";
+import { Router } from "next/router";
 
 const Contact = () => {
   return (
@@ -11,7 +12,13 @@ const Contact = () => {
             Got a question not in the list or anything else, let’s jump into a
             discussion
           </p>
-          <button>Contact us now</button>
+          <button
+            onClick={() => {
+              Router.push("/contact-us");
+            }}
+          >
+            Contact us now
+          </button>
         </div>
         <div className={classes.ImageWrapper}>
           <div className={classes.ImageContainer}>

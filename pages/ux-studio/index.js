@@ -13,20 +13,43 @@ import MobileMenu from "../../components/UXStudio/Header/MobileMenu/MobileMenu";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import classes from "./index.module.scss";
 
+import { useRef } from "react";
+
 const UXStudioPage = () => {
   const windowSize = useWindowSize();
+
+  const ourProcess = useRef(null);
+  const whyUs = useRef(null);
+  const portfolio = useRef(null);
+  const pricing = useRef(null);
+  const faq = useRef(null);
+
   return (
     <main className={classes.UXStudioPage}>
-      <HeaderStudio />
-      {windowSize.width <= 428 ? <MobileMenu /> : null}
+      <HeaderStudio
+        ourProcess={ourProcess}
+        whyUs={whyUs}
+        portfolio={portfolio}
+        pricing={pricing}
+        faq={faq}
+      />
+      {windowSize.width <= 428 ? (
+        <MobileMenu
+          ourProcess={ourProcess}
+          whyUs={whyUs}
+          portfolio={portfolio}
+          pricing={pricing}
+          faq={faq}
+        />
+      ) : null}
       <Jumbotron />
       <Highlights />
       <TrustedBy />
-      <DesignForBusiness />
-      <OurRecipe />
-      <Portfolio />
-      <Pricing />
-      <FAQ />
+      <DesignForBusiness refProp={ourProcess} />
+      <OurRecipe refProp={whyUs} />
+      <Portfolio refProp={portfolio} />
+      <Pricing refProp={pricing} />
+      <FAQ refProp={faq} />
       <Contact />
       <Footer />
     </main>

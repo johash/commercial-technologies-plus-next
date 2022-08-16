@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 import classes from "./HeaderStudio.module.scss";
 
 import { useWindowSize } from "../../../hooks/useWindowSize";
 
-const HeaderStudio = () => {
+const HeaderStudio = (props) => {
   const windowSize = useWindowSize();
+
   console.log(windowSize);
   return (
     <header className={classes.HeaderStudio}>
@@ -28,32 +30,88 @@ const HeaderStudio = () => {
         <div className={classes.NavLinks}>
           <ul>
             <li>
-              <Link href="#">Home</Link>
+              <span
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Home
+              </span>
             </li>
             <li>
-              <Link href="#">Our Process</Link>
+              <span
+                onClick={() =>
+                  props.ourProcess.current.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Our Process
+              </span>
             </li>
             <li>
-              <Link href="#">Why Us</Link>
+              <span
+                onClick={() =>
+                  props.whyUs.current.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Why Us
+              </span>
             </li>
             <li>
-              <Link href="#">Portfolio</Link>
+              <span
+                onClick={() =>
+                  props.portfolio.current.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Portfolio
+              </span>
             </li>
             <li>
-              <Link href="#">Pricing</Link>
+              <span
+                onClick={() =>
+                  props.pricing.current.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Pricing
+              </span>
             </li>
             <li>
-              <Link href="#">FAQ</Link>
+              <span
+                onClick={() =>
+                  props.faq.current.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                FAQ
+              </span>
             </li>
           </ul>
         </div>
         <div className={classes.ButtonContainer}>
           {windowSize.width > 428 ? (
-            <button className={classes.CallToActionButton}>
+            <button
+              className={classes.CallToActionButton}
+              onClick={() => {
+                Router.push("/contact-us");
+              }}
+            >
               Get a FREE UX Review
             </button>
           ) : (
-            <button className={classes.ContactButton}>Contact</button>
+            <button
+              className={classes.ContactButton}
+              onClick={() => {
+                Router.push("/contact-us");
+              }}
+            >
+              Contact
+            </button>
           )}
         </div>
       </div>

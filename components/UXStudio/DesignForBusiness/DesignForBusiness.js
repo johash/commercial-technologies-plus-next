@@ -3,9 +3,9 @@ import classes from "./DesignForBusiness.module.scss";
 
 import Image from "next/image";
 
-const DesignForBusiness = () => {
+const DesignForBusiness = ({ refProp }) => {
   return (
-    <section className={classes.DesignForBusiness}>
+    <section className={classes.DesignForBusiness} ref={refProp}>
       <div className={classes.Container}>
         <div className={classes.OurProcessSection}>
           <div className={classes.TextContainer}>
