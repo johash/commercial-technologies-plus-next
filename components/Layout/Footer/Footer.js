@@ -5,18 +5,22 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={classes.Footer}>
-      <div className={classes.LogoContainer}>
-        <a>
-          <span>
-            <div>
-              <img
-                src="/assets/logo-black-white.png"
-                alt="commercial-technologies-plus"
-              />
-            </div>
-          </span>
-        </a>
+      <div className={classes.LogoTag}>
+        <div className={classes.LogoContainer}>
+          <a>
+            <span>
+              <div>
+                <img
+                  src="/assets/logo-black-white.png"
+                  alt="commercial-technologies-plus"
+                />
+              </div>
+            </span>
+          </a>
+        </div>
+        <span className={classes.Tag}>Known as Commercializer</span>
       </div>
+
       <div className={classes.NavigationLinks}>
         <div className={classes.NavLeft}>
           <Link href="/about-commercializers">Company</Link>
